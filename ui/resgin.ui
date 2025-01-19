@@ -14,25 +14,6 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="label_6">
-    <property name="geometry">
-     <rect>
-      <x>410</x>
-      <y>190</y>
-      <width>271</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">
-    font-size: 14px;
-    font-weight: normal;
-    color: #a0a0a0; /* Màu xám nhạt */</string>
-    </property>
-    <property name="text">
-     <string>Enter your details below to creater account and get started</string>
-    </property>
-   </widget>
    <widget class="QLabel" name="label_7">
     <property name="geometry">
      <rect>
@@ -71,41 +52,6 @@
     </property>
     <property name="text">
      <string>Signup</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_5">
-    <property name="geometry">
-     <rect>
-      <x>470</x>
-      <y>160</y>
-      <width>171</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">    font-size: 24px;
-    font-weight: bold;
-    color: #000000; /* Màu đen */
-    margin-bottom: 8px;</string>
-    </property>
-    <property name="text">
-     <string>Signup</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_2">
-    <property name="geometry">
-     <rect>
-      <x>310</x>
-      <y>70</y>
-      <width>311</width>
-      <height>91</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap>../img/upscaled_logo_image.png</pixmap>
     </property>
    </widget>
    <widget class="QFrame" name="frame">
@@ -283,13 +229,65 @@
       <string>Login</string>
      </property>
     </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>170</y>
+       <width>271</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+    font-size: 14px;
+    font-weight: normal;
+    color: #a0a0a0; /* Màu xám nhạt */</string>
+     </property>
+     <property name="text">
+      <string>Enter your details below to creater
+ account and get started</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>140</y>
+       <width>171</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">    font-size: 24px;
+    font-weight: bold;
+    color: #000000; /* Màu đen */
+    margin-bottom: 8px;</string>
+     </property>
+     <property name="text">
+      <string>Signup</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>40</y>
+       <width>311</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>../img/upscaled_logo_image.png</pixmap>
+     </property>
+    </widget>
    </widget>
    <zorder>frame</zorder>
-   <zorder>label_2</zorder>
-   <zorder>label_6</zorder>
    <zorder>label_7</zorder>
    <zorder>login</zorder>
-   <zorder>label_5</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">

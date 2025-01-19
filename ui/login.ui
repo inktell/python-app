@@ -110,24 +110,6 @@
      <string>Login</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label">
-    <property name="geometry">
-     <rect>
-      <x>600</x>
-      <y>320</y>
-      <width>131</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">    color: #a0a0a0; /* Màu chữ xám nhạt */
-    font-size: 14px;
-    font-weight: normal;</string>
-    </property>
-    <property name="text">
-     <string>Forgot a pasword?</string>
-    </property>
-   </widget>
    <widget class="QPushButton" name="google">
     <property name="geometry">
      <rect>
@@ -330,12 +312,29 @@
       <pixmap>../img/upscaled_logo_image.png</pixmap>
      </property>
     </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>560</x>
+       <y>320</y>
+       <width>131</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">    color: #a0a0a0; /* Màu chữ xám nhạt */
+    font-size: 14px;
+    font-weight: normal;</string>
+     </property>
+     <property name="text">
+      <string>Forgot a pasword?</string>
+     </property>
+    </widget>
    </widget>
    <zorder>frame</zorder>
    <zorder>email</zorder>
    <zorder>lineEdit_2</zorder>
    <zorder>login</zorder>
-   <zorder>label</zorder>
    <zorder>google</zorder>
    <zorder>face</zorder>
    <zorder>label_4</zorder>
