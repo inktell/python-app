@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>947</width>
-    <height>797</height>
+    <width>951</width>
+    <height>1004</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -652,7 +652,7 @@ Voucher 30%</string>
     <property name="geometry">
      <rect>
       <x>70</x>
-      <y>460</y>
+      <y>490</y>
       <width>801</width>
       <height>151</height>
      </rect>
@@ -661,27 +661,23 @@ Voucher 30%</string>
      <string notr="true">background-color: rgb(0, 85, 255);</string>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="page">
-     <widget class="QPushButton" name="pushButton">
+     <widget class="QPushButton" name="thoi_trng">
       <property name="geometry">
        <rect>
-        <x>60</x>
-        <y>93</y>
+        <x>70</x>
+        <y>110</y>
         <width>80</width>
-        <height>31</height>
+        <height>21</height>
        </rect>
       </property>
       <property name="text">
        <string>Thời Trang</string>
       </property>
-      <property name="icon">
-       <iconset>
-        <normaloff>../img/shirt-solid.svg</normaloff>../img/shirt-solid.svg</iconset>
-      </property>
      </widget>
-     <widget class="QPushButton" name="pushButton_8">
+     <widget class="QPushButton" name="dt">
       <property name="geometry">
        <rect>
         <x>230</x>
@@ -693,16 +689,12 @@ Voucher 30%</string>
       <property name="text">
        <string>Thiết Bị Điện Tử</string>
       </property>
-      <property name="icon">
-       <iconset>
-        <normaloff>../img/mobile-screen-button-solid.svg</normaloff>../img/mobile-screen-button-solid.svg</iconset>
-      </property>
      </widget>
-     <widget class="QPushButton" name="pushButton_9">
+     <widget class="QPushButton" name="do_an">
       <property name="geometry">
        <rect>
         <x>430</x>
-        <y>100</y>
+        <y>110</y>
         <width>80</width>
         <height>24</height>
        </rect>
@@ -710,12 +702,8 @@ Voucher 30%</string>
       <property name="text">
        <string>Dồ Ăn</string>
       </property>
-      <property name="icon">
-       <iconset>
-        <normaloff>../img/utensils-solid.svg</normaloff>../img/utensils-solid.svg</iconset>
-      </property>
      </widget>
-     <widget class="QPushButton" name="pushButton_17">
+     <widget class="QPushButton" name="dung_c">
       <property name="geometry">
        <rect>
         <x>610</x>
@@ -728,9 +716,81 @@ Voucher 30%</string>
        <string>Dụng cụ
  học tập</string>
       </property>
-      <property name="icon">
-       <iconset>
-        <normaloff>../img/microscope-solid.svg</normaloff>../img/microscope-solid.svg</iconset>
+     </widget>
+     <widget class="QLabel" name="label_15">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>40</y>
+        <width>61</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../img/utensils-solid.svg</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_16">
+      <property name="geometry">
+       <rect>
+        <x>620</x>
+        <y>40</y>
+        <width>51</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../img/microscope-solid.svg</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_14">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>20</y>
+        <width>101</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../img/shirt-solid.svg</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_17">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>20</y>
+        <width>61</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../img/mobile-screen-button-solid.svg</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
       </property>
      </widget>
     </widget>
@@ -738,8 +798,8 @@ Voucher 30%</string>
      <widget class="QPushButton" name="pushButton_18">
       <property name="geometry">
        <rect>
-        <x>80</x>
-        <y>90</y>
+        <x>70</x>
+        <y>100</y>
         <width>80</width>
         <height>24</height>
        </rect>
@@ -751,21 +811,22 @@ Voucher 30%</string>
      <widget class="QPushButton" name="pushButton_19">
       <property name="geometry">
        <rect>
-        <x>250</x>
-        <y>80</y>
-        <width>80</width>
-        <height>24</height>
+        <x>240</x>
+        <y>100</y>
+        <width>71</width>
+        <height>31</height>
        </rect>
       </property>
       <property name="text">
-       <string>Chăm Sóc Thú Cưng</string>
+       <string>Chăm Sóc
+ Thú Cưng</string>
       </property>
      </widget>
      <widget class="QPushButton" name="pushButton_20">
       <property name="geometry">
        <rect>
-        <x>330</x>
-        <y>90</y>
+        <x>410</x>
+        <y>100</y>
         <width>80</width>
         <height>41</height>
        </rect>
@@ -778,8 +839,8 @@ Voucher 30%</string>
      <widget class="QPushButton" name="pushButton_21">
       <property name="geometry">
        <rect>
-        <x>470</x>
-        <y>90</y>
+        <x>590</x>
+        <y>110</y>
         <width>80</width>
         <height>24</height>
        </rect>
@@ -788,13 +849,65 @@ Voucher 30%</string>
        <string>Balo</string>
       </property>
      </widget>
+     <widget class="QLabel" name="label_21">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>60</y>
+        <width>49</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_22">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>50</y>
+        <width>49</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_23">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>50</y>
+        <width>49</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_24">
+      <property name="geometry">
+       <rect>
+        <x>620</x>
+        <y>60</y>
+        <width>49</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
     </widget>
    </widget>
    <widget class="QLabel" name="label_13">
     <property name="geometry">
      <rect>
       <x>90</x>
-      <y>430</y>
+      <y>450</y>
       <width>111</width>
       <height>31</height>
      </rect>
@@ -808,6 +921,59 @@ Voucher 30%</string>
      <string>Danh mục</string>
     </property>
    </widget>
+   <widget class="QLabel" name="label_18">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>450</y>
+      <width>821</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+ border-radius: 15px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_19">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>90</y>
+      <width>951</width>
+      <height>341</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+ border-radius: 15px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_20">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>420</y>
+      <width>951</width>
+      <height>541</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(221, 221, 221)</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <zorder>label_20</zorder>
+   <zorder>label_19</zorder>
+   <zorder>label_18</zorder>
    <zorder>label_2</zorder>
    <zorder>label</zorder>
    <zorder>lineEdit</zorder>
@@ -846,7 +1012,7 @@ Voucher 30%</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>947</width>
+     <width>951</width>
      <height>21</height>
     </rect>
    </property>
