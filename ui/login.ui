@@ -96,7 +96,7 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">    background-color: #ffa14a;
+     <string notr="true">background-color: rgb(249, 79, 47);
     color: #ffffff;
     border: none;
     border-radius: 8px;
@@ -299,7 +299,7 @@
     <widget class="QLabel" name="label_8">
      <property name="geometry">
       <rect>
-       <x>330</x>
+       <x>450</x>
        <y>60</y>
        <width>321</width>
        <height>81</height>
@@ -309,7 +309,7 @@
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap>../img/upscaled_logo_image.png</pixmap>
+      <pixmap>../img/44.png</pixmap>
      </property>
     </widget>
     <widget class="QLabel" name="label">
