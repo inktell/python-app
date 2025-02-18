@@ -34,5 +34,14 @@ def get_user_by_email(email):
     conn.close()
     return user
 
-print(get_user_by_id(3))
+def get_user_by_name(name):
+    conn = connect_db()
+    cursor = conn.cursor()
+    cursor.execute('SELECT id , name , email , password , gender FROM users WHERE name = ?', (name,))
+    user = cursor.fetchone()
+    conn.close()
+    return user
+
+print(get_user_by_id(1))
 print(get_user_by_email("tienle@gmail.com"))
+print(get_user_by_name("tien"))

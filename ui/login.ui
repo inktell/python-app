@@ -331,6 +331,29 @@
      </property>
     </widget>
    </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>270</y>
+      <width>61</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../img/mắt mở.jpg</normaloff>../img/mắt mở.jpg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>32</width>
+      <height>32</height>
+     </size>
+    </property>
+   </widget>
    <zorder>frame</zorder>
    <zorder>email</zorder>
    <zorder>lineEdit_2</zorder>
@@ -341,6 +364,7 @@
    <zorder>label_6</zorder>
    <zorder>label_5</zorder>
    <zorder>label_7</zorder>
+   <zorder>pushButton</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
