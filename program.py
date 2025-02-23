@@ -61,7 +61,7 @@ class Login(QMainWindow):
         user = get_user_by_email_and_password(email,password)
         if user is None:
             msg.success_box("Đăng nhập thành công")
-            self.show_home(user{"id"})
+            self.show_home(user["id"])
             return
 
         msg.error_box("Đăng nhập thất bại")
@@ -95,3 +95,69 @@ class Register(QMainWindow):
         self.btn_register.clicked.connect(self.register)
         self.btn_login.clicked.connect(self.login)
         self.btn_eye_p.clicked.connect(lambda : self.hiddenOrShow(self.password,self.btn_eye_p))
+        self.btn_eye_cp.clicked.connect(lambda : self.hiddenOrShow(self.confirm_password,self.btn_eye_cp))
+
+    def hiddenOrShow(self,input:QLineEdit,btn:QPushButton):
+        if input.echoMode() == QLineEdit.EchoMode.Password:
+            input.setEchoMode(QLineEdit.EchoMode.Normal)
+            btn.setIcon(QIcon("img/eye-solid.svg"))
+        else:
+            input.setEchoMode(QLineEdit.EchoMode.Password)
+            btn.setIcon(QIcon("img/eye-slash-solid.svg"))
+
+    def register(self):
+        msg = MessageBox()
+        name = self.name.text()
+        email = self.email.text()
+        password = self.password.text()
+        confirm_password = self.confirm_password.text()
+
+        if name == "":
+            msg.error_box("Không thể để trống")
+            self.name.setFocus()
+            return
+        
+        if email == "":
+            msg.error_box("Không thể để trống")
+            self.email.setFocus()
+            return
+        
+        if password == "":
+            msg.error_box("Không thể để trống")
+            self.password.setFocus()
+            return
+        
+        if confirm_password == "":
+            msg.error_box("Không thể để trống")
+            self.confirm_password.setFocus()
+            return
+        
+        if password != confirm_password:
+            msg.error_box("Mật khẩu không trùng khớp")
+            self.password.setFocus()
+            return
+        
+        if not self.validate_email(email):
+            msg.error_box("Email không hợp lệ")
+            self.email.setFocus()
+            return
+        
+        check_email = get_user_by_email(email)
+        if check_email is not None:
+            msg.error_box("Email đã tồn tại")
+
+            return
+        
+        create_user(name,email,password)
+        msg.success_box("Đăng ký thành công")
+        self.show_login()
+
+    def validate_email(self,s):
+        idx_at = s.find("@")
+        if idx_at == -1:
+            return False
+        return '.' in s[idx_at+1:]
+    def show_login(self):
+        self.login = Login()
+        self.login.show()
+        self.close()
