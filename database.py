@@ -42,6 +42,6 @@ def get_user_by_name(name):
     conn.close()
     return user
 
-print(get_user_by_id(1))
+print(get_user_by_id(3))
 print(get_user_by_email("tienle@gmail.com"))
-print(get_user_by_name("tien"))
+print(get_user_by_name("muc"))
