@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>952</width>
-    <height>719</height>
+    <height>725</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -293,11 +293,11 @@ color: rgb(255, 255, 255);</string>
       <x>-10</x>
       <y>100</y>
       <width>961</width>
-      <height>618</height>
+      <height>561</height>
      </rect>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="page">
      <widget class="QLabel" name="label_4">
@@ -1631,6 +1631,8 @@ color: rgb(255, 255, 255);</string>
      </widget>
      <zorder>label_25</zorder>
      <zorder>label_37</zorder>
+     <zorder>label_43</zorder>
+     <zorder>label_58</zorder>
      <zorder>label_28</zorder>
      <zorder>label_26</zorder>
      <zorder>label_27</zorder>
@@ -1653,12 +1655,10 @@ color: rgb(255, 255, 255);</string>
      <zorder>label_40</zorder>
      <zorder>label_41</zorder>
      <zorder>label_42</zorder>
-     <zorder>label_43</zorder>
      <zorder>pushButton_24</zorder>
-     <zorder>pushButton_25</zorder>
      <zorder>pushButton_26</zorder>
      <zorder>pushButton_27</zorder>
-     <zorder>label_58</zorder>
+     <zorder>pushButton_25</zorder>
     </widget>
     <widget class="QWidget" name="page_5">
      <widget class="QLabel" name="label_44">
@@ -2283,6 +2283,22 @@ ráy tai khủ trung</string>
      <zorder>pushButton_43</zorder>
     </widget>
    </widget>
+   <widget class="QLabel" name="label_67">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>660</y>
+      <width>951</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(68, 68, 68);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
    <zorder>label_2</zorder>
    <zorder>label</zorder>
    <zorder>lineEdit</zorder>
@@ -2297,6 +2313,7 @@ ráy tai khủ trung</string>
    <zorder>pushButton_6</zorder>
    <zorder>pushButton_7</zorder>
    <zorder>stackedWidget</zorder>
+   <zorder>label_67</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
