@@ -17,7 +17,7 @@
    <property name="styleSheet">
     <string notr="true"/>
    </property>
-   <widget class="QLineEdit" name="email">
+   <widget class="QLineEdit" name="txt_email">
     <property name="geometry">
      <rect>
       <x>400</x>
@@ -50,7 +50,7 @@
      <string>Email</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_2">
+   <widget class="QLineEdit" name="txt_password">
     <property name="geometry">
      <rect>
       <x>400</x>
@@ -86,7 +86,7 @@
      <string>Password</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="login">
+   <widget class="QPushButton" name="btn_login">
     <property name="geometry">
      <rect>
       <x>440</x>
@@ -259,32 +259,13 @@
     <property name="frameShadow">
      <enum>QFrame::Shadow::Raised</enum>
     </property>
-    <widget class="QLabel" name="label_2">
-     <property name="geometry">
-      <rect>
-       <x>570</x>
-       <y>500</y>
-       <width>71</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">    color: #ffa14a; /* Màu cam */
-    font-size: 14px;
-    font-weight: bold;
-    cursor: pointer;</string>
-     </property>
-     <property name="text">
-      <string>Signup</string>
-     </property>
-    </widget>
     <widget class="QLabel" name="label_3">
      <property name="geometry">
       <rect>
        <x>430</x>
        <y>500</y>
        <width>141</width>
-       <height>16</height>
+       <height>21</height>
       </rect>
      </property>
      <property name="styleSheet">
@@ -330,8 +311,27 @@
       <string>Forgot a pasword?</string>
      </property>
     </widget>
+    <widget class="QPushButton" name="btn_register">
+     <property name="geometry">
+      <rect>
+       <x>570</x>
+       <y>500</y>
+       <width>80</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">    color: #ffa14a; /* Màu cam */
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;</string>
+     </property>
+     <property name="text">
+      <string>Signup</string>
+     </property>
+    </widget>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="btn_eye_p">
     <property name="geometry">
      <rect>
       <x>610</x>
@@ -341,14 +341,15 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 255);</string>
+     <string notr="true">border: none;
+background: none;</string>
     </property>
     <property name="text">
      <string/>
     </property>
     <property name="icon">
      <iconset>
-      <normaloff>../img/mắt mở.jpg</normaloff>../img/mắt mở.jpg</iconset>
+      <normaloff>../img/eye-slash-solid.svg</normaloff>../img/eye-slash-solid.svg</iconset>
     </property>
     <property name="iconSize">
      <size>
@@ -358,16 +359,16 @@
     </property>
    </widget>
    <zorder>frame</zorder>
-   <zorder>email</zorder>
-   <zorder>lineEdit_2</zorder>
-   <zorder>login</zorder>
+   <zorder>txt_email</zorder>
+   <zorder>txt_password</zorder>
+   <zorder>btn_login</zorder>
    <zorder>google</zorder>
    <zorder>face</zorder>
    <zorder>label_4</zorder>
    <zorder>label_6</zorder>
    <zorder>label_5</zorder>
    <zorder>label_7</zorder>
-   <zorder>pushButton</zorder>
+   <zorder>btn_eye_p</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">

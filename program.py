@@ -1,4 +1,4 @@
-from PyQt6 import QtWidgets,Qtcore
+from PyQt6 import QtWidgets,QtCore
 from PyQt6.QtWidgets import *
 from PyQt6.QtGui import *
 from PyQt6.QtCore import *
@@ -23,22 +23,22 @@ class MessageBox():
 class Login(QMainWindow):
     def __init__(self):
         super(Login,self).__init__()
-        uic.loadUi("login.ui",self)
+        uic.loadUi("ui/login.ui",self)
 
-        self.email = self.findChild(QLineEdit,"email")
-        self.password = self.findChild(QLineEdit,"password")
+        self.email = self.findChild(QLineEdit,"txt_email")
+        self.password = self.findChild(QLineEdit,"txt_password")
         self.btn_login = self.findChild(QPushButton,"btn_login")
         self.btn_register = self.findChild(QPushButton,"btn_register")
         self.btn_eye_p = self.findChild(QPushButton,"btn_eye_p")
 
         self.btn_login.clicked.connect(self.login)
-        self.btn_register.clicked.connect(self.register)
+        self.btn_register.clicked.connect(self.show_register)
         self.btn_eye_p.clicked.connect(lambda : self.hiddenOrShow(self.password,self.btn_eye_p))
 
     def hiddenOrShow(self,input:QLineEdit,btn:QPushButton):
-        if input.echoMode() == QLineEdit.EchoMode.Normal:
+        if input.echoMode() == QLineEdit.EchoMode.Password:
             input.setEchoMode(QLineEdit.EchoMode.Normal)
-            btn.setIcon(QIcon("img/eye-solid.png"))
+            btn.setIcon(QIcon("img/eye-solid.svg"))
         else:
             input.setEchoMode(QLineEdit.EchoMode.Password)
             btn.setIcon(QIcon("img/eye-slash-solid.svg"))

@@ -127,7 +127,7 @@
       <string>Password</string>
      </property>
     </widget>
-    <widget class="QLineEdit" name="email">
+    <widget class="QLineEdit" name="txtemail">
      <property name="geometry">
       <rect>
        <x>370</x>
@@ -266,7 +266,7 @@
       <pixmap>../img/44.png</pixmap>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton">
+    <widget class="QPushButton" name="btn_eye_p">
      <property name="geometry">
       <rect>
        <x>580</x>
