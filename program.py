@@ -86,11 +86,14 @@ class Register(QMainWindow):
         super(Register,self).__init__()
         uic.loadUi("register.ui",self)
 
-        self.email = self.findChild(QLineEdit,"email")
-        self.password = self.findChild(QLineEdit,"password")
+        self.name = self.findChild(QLineEdit,"txt_name")
+        self.email = self.findChild(QLineEdit,"txt_email")
+        self.password = self.findChild(QLineEdit,"txt_password")
+        self.confirm_password = self.findChild(QLineEdit,"txt_conf_pwd")
         self.btn_register = self.findChild(QPushButton,"btn_register")
         self.btn_login = self.findChild(QPushButton,"btn_login")
         self.btn_eye_p = self.findChild(QPushButton,"btn_eye_p")
+        self.btn_eye_cp = self.findChild(QPushButton,"btn_eye_cp")
 
         self.btn_register.clicked.connect(self.register)
         self.btn_login.clicked.connect(self.login)
