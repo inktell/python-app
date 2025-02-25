@@ -4,7 +4,7 @@ from PyQt6.QtGui import *
 from PyQt6.QtCore import *
 from PyQt6 import uic
 import sys
-from setup_db import *
+from database import *
 
 class MessageBox():
     def success_box(self,message):
@@ -157,7 +157,21 @@ class Register(QMainWindow):
         if idx_at == -1:
             return False
         return '.' in s[idx_at+1:]
+
     def show_login(self):
         self.login = Login()
         self.login.show()
         self.close()
+        
+class Home(QMainWindow):
+    def __init__(self,user_id):
+        super(Home,self).__init__()
+        uic.loadUi("home.ui",self)
+
+        self.user_id = user_id
+
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
+    login = Login()
+    login.show()
+    sys.exit(app.exec())
