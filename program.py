@@ -59,7 +59,7 @@ class Login(QMainWindow):
             return
         
         user = get_user_by_email_and_password(email,password)
-        if user is None:
+        if user is not None:
             msg.success_box("Đăng nhập thành công")
             self.show_home(user["id"])
             return
@@ -84,7 +84,7 @@ class Login(QMainWindow):
 class Register(QMainWindow):
     def __init__(self):
         super(Register,self).__init__()
-        uic.loadUi("register.ui",self)
+        uic.loadUi("ui/resgin.ui",self)
 
         self.name = self.findChild(QLineEdit,"txt_name")
         self.email = self.findChild(QLineEdit,"txt_email")
@@ -96,7 +96,7 @@ class Register(QMainWindow):
         self.btn_eye_cp = self.findChild(QPushButton,"btn_eye_cp")
 
         self.btn_register.clicked.connect(self.register)
-        self.btn_login.clicked.connect(self.login)
+        self.btn_login.clicked.connect(self.show_login)
         self.btn_eye_p.clicked.connect(lambda : self.hiddenOrShow(self.password,self.btn_eye_p))
         self.btn_eye_cp.clicked.connect(lambda : self.hiddenOrShow(self.confirm_password,self.btn_eye_cp))
 
@@ -169,7 +169,7 @@ class Register(QMainWindow):
 class Home(QMainWindow):
     def __init__(self,user_id):
         super(Home,self).__init__()
-        uic.loadUi("home.ui",self)
+        uic.loadUi("ui/menu.ui",self)
 
         self.user_id = user_id
 
