@@ -171,11 +171,41 @@ class Home(QMainWindow):
         super(Home,self).__init__()
         uic.loadUi("ui/menu.ui",self)
 
+        self.main_window = self.findChild(QStackedWidget,"main_window")
+        self.btn_account_info = self.findChild(QPushButton,"btn_account")
+
+        self.account_widget = self.findChild(QStackedWidget,"account_widget")
+        self.btn_nap_account = self.findChild(QPushButton,"btn_nap_account")
+        self.btn_nap_bell = self.findChild(QPushButton,"btn_nap_bell")
+        self.btn_nap_lock = self.findChild(QPushButton,"btn_nap_lock")
+        self.btn_nap_bag = self.findChild(QPushButton,"btn_nap_bag")
+        self.btn_nap_setting = self.findChild(QPushButton,"btn_nap_setting")
+
         self.user_id = user_id
+        self.user = get_user_by_id(user_id)
+        self.loadAccountInfo()
+        self.btn_account_info.clicked.connect(lambda : self.navMainScreen(1))
+
+        self.btn_nap_account.clicked.connect(lambda : self.navAccountScreen(0))
+        self.btn_nap_bell.clicked.connect(lambda : self.navAccountScreen(2))
+        self.btn_nap_lock.clicked.connect(lambda : self.navAccountScreen(3))
+        self.btn_nap_bag.clicked.connect(lambda : self.navAccountScreen(4))
+        self.btn_nap_setting.clicked.connect(lambda : self.navAccountScreen(1))
+    
+    def navMainScreen(self, index):
+        self.main_window.setCurrentIndex(index)
+
+    def navAccountScreen(self, index):
+        self.account_widget.setCurrentIndex(index)
+
+    def loadAccountInfo(self):
+        self.txt_name = self.findChild(QLineEdit,"txt_name")
+        self.txt_email = self.findChild(QLineEdit,"txt_email")
+        self.txt_name.setText(self.user["name"])
+        self.txt_email.setText(self.user["email"])
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     login = Login()
     login.show()
     sys.exit(app.exec())
-
