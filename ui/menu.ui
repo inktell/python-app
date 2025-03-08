@@ -14,22 +14,6 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="label">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>-10</y>
-      <width>341</width>
-      <height>131</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap>../img/44.png</pixmap>
-    </property>
-   </widget>
    <widget class="QLineEdit" name="lineEdit">
     <property name="geometry">
      <rect>
@@ -103,7 +87,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_3">
+   <widget class="QPushButton" name="btn_bag">
     <property name="geometry">
      <rect>
       <x>860</x>
@@ -192,7 +176,7 @@ color: rgb(255, 255, 255);</string>
       <normaloff>../img/question-soli.svg</normaloff>../img/question-soli.svg</iconset>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_4">
+   <widget class="QPushButton" name="btn_bell">
     <property name="geometry">
      <rect>
       <x>530</x>
@@ -283,8 +267,8 @@ color: rgb(255, 255, 255);</string>
      <widget class="QLabel" name="label_4">
       <property name="geometry">
        <rect>
-        <x>350</x>
-        <y>30</y>
+        <x>340</x>
+        <y>0</y>
         <width>301</width>
         <height>191</height>
        </rect>
@@ -299,8 +283,8 @@ color: rgb(255, 255, 255);</string>
      <widget class="QLabel" name="label_5">
       <property name="geometry">
        <rect>
-        <x>650</x>
-        <y>20</y>
+        <x>640</x>
+        <y>-10</y>
         <width>301</width>
         <height>211</height>
        </rect>
@@ -333,7 +317,7 @@ color: rgb(255, 255, 255);</string>
        <string>Tìm kiếm hàng đầu</string>
       </property>
      </widget>
-     <widget class="QStackedWidget" name="danhmuc">
+     <widget class="QStackedWidget" name="danhmuc_widget">
       <property name="geometry">
        <rect>
         <x>90</x>
@@ -346,7 +330,7 @@ color: rgb(255, 255, 255);</string>
        <string notr="true">background-color: rgb(255, 255, 255);</string>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="page_3">
        <widget class="QLabel" name="label_14">
@@ -595,53 +579,6 @@ color: rgb(255, 255, 255);</string>
        </widget>
       </widget>
      </widget>
-     <widget class="QPushButton" name="pushButton_12">
-      <property name="geometry">
-       <rect>
-        <x>570</x>
-        <y>230</y>
-        <width>61</width>
-        <height>61</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">        background-color: white;
-        border: 1px solid #ccc;
-        border-radius: 10px;
-        padding: 10px;
-        font-size: 14px;
-        color: #333;</string>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="icon">
-       <iconset>
-        <normaloff>../img/Ảnh chụp màn hình 2025-01-19 180316.png</normaloff>../img/Ảnh chụp màn hình 2025-01-19 180316.png</iconset>
-      </property>
-      <property name="iconSize">
-       <size>
-        <width>40</width>
-        <height>40</height>
-       </size>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_7">
-      <property name="geometry">
-       <rect>
-        <x>210</x>
-        <y>290</y>
-        <width>81</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">color: rgb(0, 0, 0);</string>
-      </property>
-      <property name="text">
-       <string>Mã Giảm Giá</string>
-      </property>
-     </widget>
      <widget class="QLabel" name="label_20">
       <property name="geometry">
        <rect>
@@ -656,181 +593,6 @@ color: rgb(255, 255, 255);</string>
       </property>
       <property name="text">
        <string/>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pushButton_15">
-      <property name="geometry">
-       <rect>
-        <x>810</x>
-        <y>230</y>
-        <width>61</width>
-        <height>61</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">        background-color: white;
-        border: 1px solid #ccc;
-        border-radius: 10px;
-        padding: 10px;
-        font-size: 14px;
-        color: #333;</string>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="icon">
-       <iconset>
-        <normaloff>../img/Ảnh chụp màn hình 2025-01-19 180355.png</normaloff>../img/Ảnh chụp màn hình 2025-01-19 180355.png</iconset>
-      </property>
-      <property name="iconSize">
-       <size>
-        <width>40</width>
-        <height>40</height>
-       </size>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pushButton_13">
-      <property name="geometry">
-       <rect>
-        <x>450</x>
-        <y>230</y>
-        <width>61</width>
-        <height>61</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">        background-color: white;
-        border: 1px solid #ccc;
-        border-radius: 10px;
-        padding: 10px;
-        font-size: 14px;
-        color: #333;</string>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="icon">
-       <iconset>
-        <normaloff>../img/Ảnh chụp màn hình 2025-01-19 180258.png</normaloff>../img/Ảnh chụp màn hình 2025-01-19 180258.png</iconset>
-      </property>
-      <property name="iconSize">
-       <size>
-        <width>40</width>
-        <height>40</height>
-       </size>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_8">
-      <property name="geometry">
-       <rect>
-        <x>330</x>
-        <y>290</y>
-        <width>101</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">color: rgb(0, 0, 0);</string>
-      </property>
-      <property name="text">
-       <string>Miễn Phí Ship
- - Có Shopee</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_10">
-      <property name="geometry">
-       <rect>
-        <x>680</x>
-        <y>280</y>
-        <width>161</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">color: rgb(0, 0, 0);</string>
-      </property>
-      <property name="text">
-       <string>Voucher Giảm Đến
- 1 Triệu</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_9">
-      <property name="geometry">
-       <rect>
-        <x>450</x>
-        <y>290</y>
-        <width>71</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">color: rgb(0, 0, 0);</string>
-      </property>
-      <property name="text">
-       <string>Shopee Style
-Voucher 30%</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pushButton_10">
-      <property name="geometry">
-       <rect>
-        <x>90</x>
-        <y>230</y>
-        <width>61</width>
-        <height>61</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">        background-color: white;
-        border: 1px solid #ccc;
-        border-radius: 10px;
-        padding: 10px;
-        font-size: 14px;
-        color: #333;</string>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="icon">
-       <iconset>
-        <normaloff>../img/Ảnh chụp màn hình 2025-01-19 174942.png</normaloff>../img/Ảnh chụp màn hình 2025-01-19 174942.png</iconset>
-      </property>
-      <property name="iconSize">
-       <size>
-        <width>40</width>
-        <height>40</height>
-       </size>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pushButton_14">
-      <property name="geometry">
-       <rect>
-        <x>210</x>
-        <y>230</y>
-        <width>61</width>
-        <height>61</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">        background-color: white;
-        border: 1px solid #ccc;
-        border-radius: 10px;
-        padding: 10px;
-        font-size: 14px;
-        color: #333;</string>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="icon">
-       <iconset>
-        <normaloff>../img/Ảnh chụp màn hình 2025-01-19 180217.png</normaloff>../img/Ảnh chụp màn hình 2025-01-19 180217.png</iconset>
-      </property>
-      <property name="iconSize">
-       <size>
-        <width>40</width>
-        <height>40</height>
-       </size>
       </property>
      </widget>
      <widget class="QLabel" name="label_18">
@@ -850,91 +612,13 @@ Voucher 30%</string>
        <string/>
       </property>
      </widget>
-     <widget class="QLabel" name="label_11">
-      <property name="geometry">
-       <rect>
-        <x>570</x>
-        <y>290</y>
-        <width>91</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">color: rgb(0, 0, 0);</string>
-      </property>
-      <property name="text">
-       <string>Hàng Quốc Tế</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pushButton_16">
-      <property name="geometry">
-       <rect>
-        <x>690</x>
-        <y>230</y>
-        <width>61</width>
-        <height>61</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">        background-color: white;
-        border: 1px solid #ccc;
-        border-radius: 10px;
-        padding: 10px;
-        font-size: 14px;
-        color: #333;</string>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="icon">
-       <iconset>
-        <normaloff>../img/Ảnh chụp màn hình 2025-01-19 180340.png</normaloff>../img/Ảnh chụp màn hình 2025-01-19 180340.png</iconset>
-      </property>
-      <property name="iconSize">
-       <size>
-        <width>40</width>
-        <height>40</height>
-       </size>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pushButton_11">
-      <property name="geometry">
-       <rect>
-        <x>330</x>
-        <y>230</y>
-        <width>61</width>
-        <height>61</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">        background-color: white;
-        border: 1px solid #ccc;
-        border-radius: 10px;
-        padding: 10px;
-        font-size: 14px;
-        color: #333;</string>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="icon">
-       <iconset>
-        <normaloff>../img/Ảnh chụp màn hình 2025-01-19 180239.png</normaloff>../img/Ảnh chụp màn hình 2025-01-19 180239.png</iconset>
-      </property>
-      <property name="iconSize">
-       <size>
-        <width>40</width>
-        <height>40</height>
-       </size>
-      </property>
-     </widget>
      <widget class="QLabel" name="label_19">
       <property name="geometry">
        <rect>
         <x>10</x>
         <y>-10</y>
         <width>951</width>
-        <height>341</height>
+        <height>331</height>
        </rect>
       </property>
       <property name="styleSheet">
@@ -945,28 +629,11 @@ Voucher 30%</string>
        <string/>
       </property>
      </widget>
-     <widget class="QLabel" name="label_12">
-      <property name="geometry">
-       <rect>
-        <x>800</x>
-        <y>280</y>
-        <width>101</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">color: rgb(0, 0, 0);</string>
-      </property>
-      <property name="text">
-       <string>Nạp Thẻ, Dịch Vụ
-&amp; Vé Tàu Hỏa</string>
-      </property>
-     </widget>
      <widget class="QLabel" name="label_3">
       <property name="geometry">
        <rect>
         <x>50</x>
-        <y>30</y>
+        <y>0</y>
         <width>301</width>
         <height>191</height>
        </rect>
@@ -978,24 +645,7 @@ Voucher 30%</string>
        <pixmap>../img/images.jpg</pixmap>
       </property>
      </widget>
-     <widget class="QLabel" name="label_6">
-      <property name="geometry">
-       <rect>
-        <x>90</x>
-        <y>290</y>
-        <width>61</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">color: rgb(0, 0, 0);</string>
-      </property>
-      <property name="text">
-       <string>Hàng Chọn
-Giá Hời</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pushButton_18">
+     <widget class="QPushButton" name="btn_right">
       <property name="geometry">
        <rect>
         <x>890</x>
@@ -1017,7 +667,7 @@ Giá Hời</string>
         <normaloff>../img/arrow-right-solid.svg</normaloff>../img/arrow-right-solid.svg</iconset>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton_19">
+     <widget class="QPushButton" name="btn_left">
       <property name="geometry">
        <rect>
         <x>50</x>
@@ -1039,30 +689,56 @@ Giá Hời</string>
         <normaloff>../img/arrow-left-solid.svg</normaloff>../img/arrow-left-solid.svg</iconset>
       </property>
      </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>180</y>
+        <width>291</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../img/images.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>180</y>
+        <width>601</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../img/images (6).jpg</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
      <zorder>label_20</zorder>
      <zorder>label_18</zorder>
-     <zorder>danhmuc</zorder>
+     <zorder>danhmuc_widget</zorder>
      <zorder>label_19</zorder>
-     <zorder>pushButton_10</zorder>
-     <zorder>label_7</zorder>
      <zorder>label_4</zorder>
-     <zorder>label_11</zorder>
-     <zorder>label_6</zorder>
      <zorder>label_5</zorder>
-     <zorder>pushButton_11</zorder>
-     <zorder>pushButton_16</zorder>
-     <zorder>label_10</zorder>
      <zorder>label_3</zorder>
-     <zorder>pushButton_13</zorder>
-     <zorder>pushButton_15</zorder>
-     <zorder>pushButton_14</zorder>
-     <zorder>pushButton_12</zorder>
-     <zorder>label_9</zorder>
-     <zorder>label_8</zorder>
      <zorder>label_13</zorder>
-     <zorder>label_12</zorder>
-     <zorder>pushButton_18</zorder>
-     <zorder>pushButton_19</zorder>
+     <zorder>btn_right</zorder>
+     <zorder>btn_left</zorder>
+     <zorder>label</zorder>
+     <zorder>label_6</zorder>
     </widget>
     <widget class="QWidget" name="page_6">
      <widget class="QStackedWidget" name="account_widget">
@@ -1079,7 +755,7 @@ Giá Hời</string>
 background: none;</string>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>3</number>
       </property>
       <widget class="QWidget" name="page_5">
        <widget class="QLabel" name="label_44">
@@ -3056,6 +2732,38 @@ Shopee</string>
        <bool>true</bool>
       </property>
      </widget>
+     <widget class="QLabel" name="label_85">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>0</y>
+        <width>951</width>
+        <height>618</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(221, 221, 221)</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <zorder>label_85</zorder>
+     <zorder>label_65</zorder>
+     <zorder>label_66</zorder>
+     <zorder>label_67</zorder>
+     <zorder>label_73</zorder>
+     <zorder>label_74</zorder>
+     <zorder>label_75</zorder>
+     <zorder>label_76</zorder>
+     <zorder>label_77</zorder>
+     <zorder>label_78</zorder>
+     <zorder>label_80</zorder>
+     <zorder>comboBox_2</zorder>
+     <zorder>label_81</zorder>
+     <zorder>label_82</zorder>
+     <zorder>label_83</zorder>
+     <zorder>label_84</zorder>
     </widget>
     <widget class="QWidget" name="page_11">
      <widget class="QLabel" name="label_52">
@@ -3131,19 +2839,42 @@ Shopee</string>
      <zorder>line_4</zorder>
     </widget>
    </widget>
+   <widget class="QPushButton" name="btn_shopee">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>191</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../img/44.png</normaloff>../img/44.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>300</width>
+      <height>300</height>
+     </size>
+    </property>
+   </widget>
    <zorder>label_2</zorder>
-   <zorder>label</zorder>
    <zorder>lineEdit</zorder>
    <zorder>pushButton_2</zorder>
-   <zorder>pushButton_3</zorder>
+   <zorder>btn_bag</zorder>
    <zorder>btn_account</zorder>
    <zorder>lang</zorder>
    <zorder>ho_tro</zorder>
-   <zorder>pushButton_4</zorder>
+   <zorder>btn_bell</zorder>
    <zorder>pushButton_5</zorder>
    <zorder>pushButton_6</zorder>
    <zorder>pushButton_7</zorder>
    <zorder>main_window</zorder>
+   <zorder>btn_shopee</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">

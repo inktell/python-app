@@ -173,6 +173,9 @@ class Home(QMainWindow):
 
         self.main_window = self.findChild(QStackedWidget,"main_window")
         self.btn_account_info = self.findChild(QPushButton,"btn_account")
+        self.btn_bag = self.findChild(QPushButton,"btn_bag")
+        self.btn_shopee = self.findChild(QPushButton,"btn_shopee")
+        self.btn_bell = self.findChild(QPushButton,"btn_bell")
 
         self.account_widget = self.findChild(QStackedWidget,"account_widget")
         self.btn_nap_account = self.findChild(QPushButton,"btn_nap_account")
@@ -181,17 +184,28 @@ class Home(QMainWindow):
         self.btn_nap_bag = self.findChild(QPushButton,"btn_nap_bag")
         self.btn_nap_setting = self.findChild(QPushButton,"btn_nap_setting")
 
+        self.danhmuc_widget = self.findChild(QStackedWidget,"danhmuc_widget")
+
         self.user_id = user_id
         self.user = get_user_by_id(user_id)
+        
         self.loadAccountInfo()
         self.btn_account_info.clicked.connect(lambda : self.navMainScreen(1))
+        self.btn_bag.clicked.connect(lambda : self.navMainScreen(4))
+        self.btn_shopee.clicked.connect(lambda : self.navMainScreen(0))
+        self.btn_bell.clicked.connect(lambda : self.navMainScreen(1))
 
         self.btn_nap_account.clicked.connect(lambda : self.navAccountScreen(0))
-        self.btn_nap_bell.clicked.connect(lambda : self.navAccountScreen(2))
-        self.btn_nap_lock.clicked.connect(lambda : self.navAccountScreen(3))
-        self.btn_nap_bag.clicked.connect(lambda : self.navAccountScreen(4))
-        self.btn_nap_setting.clicked.connect(lambda : self.navAccountScreen(1))
+        self.btn_nap_bell.clicked.connect(lambda : self.navAccountScreen(1))
+        self.btn_nap_lock.clicked.connect(lambda : self.navAccountScreen(2))
+        self.btn_nap_bag.clicked.connect(lambda : self.navAccountScreen(3))
+        self.btn_nap_setting.clicked.connect(lambda : self.navAccountScreen(4))
+        self.btn_bell.clicked.connect(lambda : self.navAccountScreen(1))
     
+        self.current_danhmuc_index = 0
+        self.btn_right.clicked.connect(lambda : self.navSellScreen(1,True))
+        self.btn_left.clicked.connect(lambda : self.navSellScreen(0))
+
     def navMainScreen(self, index):
         self.main_window.setCurrentIndex(index)
 
@@ -203,6 +217,19 @@ class Home(QMainWindow):
         self.txt_email = self.findChild(QLineEdit,"txt_email")
         self.txt_name.setText(self.user["name"])
         self.txt_email.setText(self.user["email"])
+
+    def navSellScreen(self,index,plus=False):
+        if plus:
+            if self.current_danhmuc_index > 0:
+                self.current_danhmuc_index = 0    
+            else:
+                self.current_danhmuc_index += 1
+        else:
+            if self.current_danhmuc_index < 1:
+                self.current_danhmuc_index = 1
+            else:  
+                self.current_danhmuc_index -= 1
+        self.danhmuc_widget.setCurrentIndex(self.current_danhmuc_index)
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
