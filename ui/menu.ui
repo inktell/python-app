@@ -267,10 +267,10 @@ color: rgb(255, 255, 255);</string>
      <widget class="QLabel" name="label_4">
       <property name="geometry">
        <rect>
-        <x>340</x>
-        <y>0</y>
-        <width>301</width>
-        <height>191</height>
+        <x>610</x>
+        <y>40</y>
+        <width>331</width>
+        <height>211</height>
        </rect>
       </property>
       <property name="text">
@@ -279,12 +279,15 @@ color: rgb(255, 255, 255);</string>
       <property name="pixmap">
        <pixmap>../img/images (1).jpg</pixmap>
       </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
      </widget>
      <widget class="QLabel" name="label_5">
       <property name="geometry">
        <rect>
-        <x>640</x>
-        <y>-10</y>
+        <x>310</x>
+        <y>40</y>
         <width>301</width>
         <height>211</height>
        </rect>
@@ -294,6 +297,9 @@ color: rgb(255, 255, 255);</string>
       </property>
       <property name="pixmap">
        <pixmap>../img/images (2).jpg</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
       </property>
      </widget>
      <widget class="QLabel" name="label_13">
@@ -632,10 +638,10 @@ color: rgb(255, 255, 255);</string>
      <widget class="QLabel" name="label_3">
       <property name="geometry">
        <rect>
-        <x>50</x>
-        <y>0</y>
-        <width>301</width>
-        <height>191</height>
+        <x>20</x>
+        <y>40</y>
+        <width>291</width>
+        <height>211</height>
        </rect>
       </property>
       <property name="text">
@@ -643,6 +649,9 @@ color: rgb(255, 255, 255);</string>
       </property>
       <property name="pixmap">
        <pixmap>../img/images.jpg</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
       </property>
      </widget>
      <widget class="QPushButton" name="btn_right">
@@ -689,44 +698,6 @@ color: rgb(255, 255, 255);</string>
         <normaloff>../img/arrow-left-solid.svg</normaloff>../img/arrow-left-solid.svg</iconset>
       </property>
      </widget>
-     <widget class="QLabel" name="label">
-      <property name="geometry">
-       <rect>
-        <x>50</x>
-        <y>180</y>
-        <width>291</width>
-        <height>141</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>../img/images.png</pixmap>
-      </property>
-      <property name="scaledContents">
-       <bool>true</bool>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_6">
-      <property name="geometry">
-       <rect>
-        <x>340</x>
-        <y>180</y>
-        <width>601</width>
-        <height>141</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>../img/images (6).jpg</pixmap>
-      </property>
-      <property name="scaledContents">
-       <bool>true</bool>
-      </property>
-     </widget>
      <zorder>label_20</zorder>
      <zorder>label_18</zorder>
      <zorder>danhmuc_widget</zorder>
@@ -737,8 +708,6 @@ color: rgb(255, 255, 255);</string>
      <zorder>label_13</zorder>
      <zorder>btn_right</zorder>
      <zorder>btn_left</zorder>
-     <zorder>label</zorder>
-     <zorder>label_6</zorder>
     </widget>
     <widget class="QWidget" name="page_6">
      <widget class="QStackedWidget" name="account_widget">
@@ -755,7 +724,7 @@ color: rgb(255, 255, 255);</string>
 background: none;</string>
       </property>
       <property name="currentIndex">
-       <number>3</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="page_5">
        <widget class="QLabel" name="label_44">
