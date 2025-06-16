@@ -114,143 +114,6 @@
      </size>
     </property>
    </widget>
-   <widget class="QPushButton" name="btn_account">
-    <property name="geometry">
-     <rect>
-      <x>770</x>
-      <y>0</y>
-      <width>171</width>
-      <height>24</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(250, 80, 48);
-color: rgb(255, 255, 255);
-</string>
-    </property>
-    <property name="text">
-     <string>account</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="lang">
-    <property name="geometry">
-     <rect>
-      <x>690</x>
-      <y>0</y>
-      <width>80</width>
-      <height>24</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color: rgb(255, 255, 255);
-background: none repeat scroll 0 0 transparent;
-        border: medium none;</string>
-    </property>
-    <property name="text">
-     <string>Tiếng Việt</string>
-    </property>
-    <property name="icon">
-     <iconset>
-      <normaloff>../img/globe-solid.svg</normaloff>../img/globe-solid.svg</iconset>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="ho_tro">
-    <property name="geometry">
-     <rect>
-      <x>610</x>
-      <y>0</y>
-      <width>80</width>
-      <height>24</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background: none repeat scroll 0 0 transparent;
-        border: medium none;
-color: rgb(255, 255, 255);</string>
-    </property>
-    <property name="text">
-     <string>Hỗ trợ</string>
-    </property>
-    <property name="icon">
-     <iconset>
-      <normaloff>../img/question-soli.svg</normaloff>../img/question-soli.svg</iconset>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="btn_bell">
-    <property name="geometry">
-     <rect>
-      <x>530</x>
-      <y>0</y>
-      <width>80</width>
-      <height>24</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(163, 163, 163);
-color: rgb(0, 0, 0);</string>
-    </property>
-    <property name="text">
-     <string>Thông Báo</string>
-    </property>
-    <property name="icon">
-     <iconset>
-      <normaloff>../img/bell-regular.svg</normaloff>../img/bell-regular.svg</iconset>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_5">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>0</y>
-      <width>91</width>
-      <height>24</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background: none repeat scroll 0 0 transparent;
-        border: medium none;
-color: rgb(255, 255, 255);</string>
-    </property>
-    <property name="text">
-     <string>Kênh Người Bán</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_6">
-    <property name="geometry">
-     <rect>
-      <x>90</x>
-      <y>0</y>
-      <width>161</width>
-      <height>24</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background: none repeat scroll 0 0 transparent;
-        border: medium none;
-color: rgb(255, 255, 255);</string>
-    </property>
-    <property name="text">
-     <string>Trở Thành Người Bán Shoppe</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_7">
-    <property name="geometry">
-     <rect>
-      <x>50</x>
-      <y>0</y>
-      <width>80</width>
-      <height>24</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background: none repeat scroll 0 0 transparent;
-        border: medium none;
-color: rgb(255, 255, 255);</string>
-    </property>
-    <property name="text">
-     <string>|</string>
-    </property>
-   </widget>
    <widget class="QStackedWidget" name="main_window">
     <property name="geometry">
      <rect>
@@ -261,7 +124,7 @@ color: rgb(255, 255, 255);</string>
      </rect>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="page">
      <widget class="QLabel" name="label_4">
@@ -724,7 +587,7 @@ color: rgb(255, 255, 255);</string>
 background: none;</string>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>4</number>
       </property>
       <widget class="QWidget" name="page_5">
        <widget class="QLabel" name="label_44">
@@ -850,7 +713,7 @@ font: 15pt &quot;Segoe UI&quot;;
          <string>tên đăng nhập</string>
         </property>
        </widget>
-       <widget class="QPushButton" name="pushButton_20">
+       <widget class="QPushButton" name="pick_picture">
         <property name="geometry">
          <rect>
           <x>310</x>
@@ -955,7 +818,7 @@ font: 15pt &quot;Segoe UI&quot;;
        <zorder>pushButton_28</zorder>
        <zorder>txt_name</zorder>
        <zorder>label_16</zorder>
-       <zorder>pushButton_20</zorder>
+       <zorder>pick_picture</zorder>
        <zorder>label_17</zorder>
        <zorder>comboBox</zorder>
        <zorder>line</zorder>
@@ -1191,7 +1054,7 @@ của tất cả các đơn hàng</string>
          </rect>
         </property>
         <property name="text">
-         <string>CheckBox</string>
+         <string/>
         </property>
         <property name="iconSize">
          <size>
@@ -1213,7 +1076,7 @@ của tất cả các đơn hàng</string>
          </rect>
         </property>
         <property name="text">
-         <string>CheckBox</string>
+         <string/>
         </property>
        </widget>
        <widget class="QCheckBox" name="checkBox_3">
@@ -1226,7 +1089,7 @@ của tất cả các đơn hàng</string>
          </rect>
         </property>
         <property name="text">
-         <string>CheckBox</string>
+         <string/>
         </property>
        </widget>
        <widget class="QCheckBox" name="checkBox_4">
@@ -1239,7 +1102,7 @@ của tất cả các đơn hàng</string>
          </rect>
         </property>
         <property name="text">
-         <string>CheckBox</string>
+         <string/>
         </property>
        </widget>
        <widget class="QCheckBox" name="checkBox_5">
@@ -1252,7 +1115,7 @@ của tất cả các đơn hàng</string>
          </rect>
         </property>
         <property name="text">
-         <string>CheckBox</string>
+         <string/>
         </property>
        </widget>
       </widget>
@@ -1666,87 +1529,6 @@ color: rgb(255, 255, 255);</string>
        </widget>
       </widget>
      </widget>
-     <widget class="QPushButton" name="btn_nap_account">
-      <property name="geometry">
-       <rect>
-        <x>140</x>
-        <y>90</y>
-        <width>71</width>
-        <height>51</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">border: none;
-background: none;</string>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="icon">
-       <iconset>
-        <normaloff>../img/circle-user-solid.svg</normaloff>../img/circle-user-solid.svg</iconset>
-      </property>
-      <property name="iconSize">
-       <size>
-        <width>50</width>
-        <height>50</height>
-       </size>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="btn_nap_lock">
-      <property name="geometry">
-       <rect>
-        <x>140</x>
-        <y>210</y>
-        <width>71</width>
-        <height>51</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">border: none;
-background: none;</string>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="icon">
-       <iconset>
-        <normaloff>../img/unlock-keyhole-solid.svg</normaloff>../img/unlock-keyhole-solid.svg</iconset>
-      </property>
-      <property name="iconSize">
-       <size>
-        <width>50</width>
-        <height>50</height>
-       </size>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="btn_nap_bell">
-      <property name="geometry">
-       <rect>
-        <x>140</x>
-        <y>150</y>
-        <width>71</width>
-        <height>51</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">border: none;
-background: none;</string>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="icon">
-       <iconset>
-        <normaloff>../img/bell-solid.svg</normaloff>../img/bell-solid.svg</iconset>
-      </property>
-      <property name="iconSize">
-       <size>
-        <width>50</width>
-        <height>50</height>
-       </size>
-      </property>
-     </widget>
      <widget class="QLabel" name="label_45">
       <property name="geometry">
        <rect>
@@ -1804,60 +1586,6 @@ background: none;</string>
        <bool>true</bool>
       </property>
      </widget>
-     <widget class="QPushButton" name="btn_nap_setting">
-      <property name="geometry">
-       <rect>
-        <x>140</x>
-        <y>330</y>
-        <width>71</width>
-        <height>51</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">border: none;
-background: none;</string>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="icon">
-       <iconset>
-        <normaloff>../img/gear-solid.svg</normaloff>../img/gear-solid.svg</iconset>
-      </property>
-      <property name="iconSize">
-       <size>
-        <width>50</width>
-        <height>50</height>
-       </size>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="btn_nap_bag">
-      <property name="geometry">
-       <rect>
-        <x>140</x>
-        <y>270</y>
-        <width>71</width>
-        <height>51</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">border: none;
-background: none;</string>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="icon">
-       <iconset>
-        <normaloff>../img/bag-shopping-solid.svg</normaloff>../img/bag-shopping-solid.svg</iconset>
-      </property>
-      <property name="iconSize">
-       <size>
-        <width>50</width>
-        <height>50</height>
-       </size>
-      </property>
-     </widget>
      <widget class="QLabel" name="label_79">
       <property name="geometry">
        <rect>
@@ -1894,17 +1622,130 @@ border-radius: 15px;</string>
        <bool>true</bool>
       </property>
      </widget>
+     <widget class="QWidget" name="verticalLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>80</y>
+        <width>151</width>
+        <height>311</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <widget class="QPushButton" name="btn_nap_account">
+         <property name="styleSheet">
+          <string notr="true">border: none;
+background: none;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../img/circle-user-solid.svg</normaloff>../img/circle-user-solid.svg</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>50</width>
+           <height>50</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn_nap_bell">
+         <property name="styleSheet">
+          <string notr="true">border: none;
+background: none;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../img/bell-solid.svg</normaloff>../img/bell-solid.svg</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>50</width>
+           <height>50</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn_nap_lock">
+         <property name="styleSheet">
+          <string notr="true">border: none;
+background: none;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../img/unlock-keyhole-solid.svg</normaloff>../img/unlock-keyhole-solid.svg</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>50</width>
+           <height>50</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn_nap_bag">
+         <property name="styleSheet">
+          <string notr="true">border: none;
+background: none;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../img/bag-shopping-solid.svg</normaloff>../img/bag-shopping-solid.svg</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>50</width>
+           <height>50</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn_nap_setting">
+         <property name="styleSheet">
+          <string notr="true">border: none;
+background: none;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../img/gear-solid.svg</normaloff>../img/gear-solid.svg</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>50</width>
+           <height>50</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
      <zorder>label_24</zorder>
      <zorder>account_widget</zorder>
      <zorder>label_79</zorder>
-     <zorder>btn_nap_account</zorder>
-     <zorder>btn_nap_lock</zorder>
-     <zorder>btn_nap_bell</zorder>
      <zorder>label_45</zorder>
      <zorder>label_46</zorder>
      <zorder>label_47</zorder>
-     <zorder>btn_nap_setting</zorder>
-     <zorder>btn_nap_bag</zorder>
+     <zorder>verticalLayoutWidget</zorder>
     </widget>
     <widget class="QWidget" name="page_2">
      <widget class="QLabel" name="label_25">
@@ -2831,19 +2672,112 @@ Shopee</string>
      </size>
     </property>
    </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>951</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QPushButton" name="pushButton_6">
+       <property name="styleSheet">
+        <string notr="true">background: none repeat scroll 0 0 transparent;
+        border: medium none;
+color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>Kênh Người Bán|Trở Thành Người Bán Shoppe</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Orientation::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_bell">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(163, 163, 163);
+color: rgb(0, 0, 0);</string>
+       </property>
+       <property name="text">
+        <string>Thông Báo</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>../img/bell-regular.svg</normaloff>../img/bell-regular.svg</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="ho_tro">
+       <property name="styleSheet">
+        <string notr="true">background: none repeat scroll 0 0 transparent;
+        border: medium none;
+color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>Hỗ trợ</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>../img/question-soli.svg</normaloff>../img/question-soli.svg</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="lang">
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+background: none repeat scroll 0 0 transparent;
+        border: medium none;</string>
+       </property>
+       <property name="text">
+        <string>Tiếng Việt</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>../img/globe-solid.svg</normaloff>../img/globe-solid.svg</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_account">
+       <property name="toolTipDuration">
+        <number>-1</number>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(250, 80, 48);
+color: rgb(255, 255, 255);
+</string>
+       </property>
+       <property name="text">
+        <string>account</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
    <zorder>label_2</zorder>
    <zorder>lineEdit</zorder>
    <zorder>pushButton_2</zorder>
    <zorder>btn_bag</zorder>
-   <zorder>btn_account</zorder>
-   <zorder>lang</zorder>
-   <zorder>ho_tro</zorder>
-   <zorder>btn_bell</zorder>
-   <zorder>pushButton_5</zorder>
-   <zorder>pushButton_6</zorder>
-   <zorder>pushButton_7</zorder>
    <zorder>main_window</zorder>
    <zorder>btn_shopee</zorder>
+   <zorder>horizontalLayoutWidget</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
