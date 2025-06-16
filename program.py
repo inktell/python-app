@@ -195,6 +195,9 @@ class Home(QMainWindow):
         self.btn_shopee.clicked.connect(lambda : self.navMainScreen(0))
         self.btn_bell.clicked.connect(lambda : self.navMainScreen(1))
 
+        self.btn_avatar = self.findChild(QPushButton,"btn_avatar")
+        self.btn_avatar.clicked.connect(self.update_avatar)
+
         self.btn_account_info.clicked.connect(lambda : self.navAccountScreen(0))
         self.btn_nap_account.clicked.connect(lambda : self.navAccountScreen(0))
         self.btn_nap_bell.clicked.connect(lambda : self.navAccountScreen(1))
@@ -231,6 +234,14 @@ class Home(QMainWindow):
             else:  
                 self.current_danhmuc_index -= 1
         self.danhmuc_widget.setCurrentIndex(self.current_danhmuc_index)
+
+    
+    def update_avatar(self):
+            file = QFileDialog.getOpenFileName(self, "Chọn ảnh đại diện", "", "Images (*.png *.jpg *.jpeg)")[0]
+            if file:
+                self.user["avatar"] = file
+                self.btn_avatar.setIcon(QIcon(file))
+                update_avatar_user(self.user_id, file)
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
