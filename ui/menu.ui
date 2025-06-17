@@ -199,7 +199,7 @@
        <string notr="true">background-color: rgb(255, 255, 255);</string>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="page_3">
        <widget class="QLabel" name="label_14">
@@ -215,236 +215,110 @@
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap>../img/Ảnh chụp màn hình 2025-02-28 214148.png</pixmap>
+         <pixmap>../img/Ảnh chụp màn hình 2025-02-28 214148.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="pushButton_33">
-        <property name="geometry">
-         <rect>
-          <x>550</x>
-          <y>140</y>
-          <width>80</width>
-          <height>24</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">background-color: rgb(95, 95, 95);
-color: rgb(255, 255, 255);</string>
-        </property>
-        <property name="text">
-         <string>nhấn vào đây</string>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="pushButton_34">
-        <property name="geometry">
-         <rect>
-          <x>410</x>
-          <y>140</y>
-          <width>80</width>
-          <height>24</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">background-color: rgb(95, 95, 95);
-color: rgb(255, 255, 255);</string>
-        </property>
-        <property name="text">
-         <string>nhấn vào đây</string>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="pushButton_35">
-        <property name="geometry">
-         <rect>
-          <x>680</x>
-          <y>140</y>
-          <width>80</width>
-          <height>24</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">background-color: rgb(95, 95, 95);
-color: rgb(255, 255, 255);</string>
-        </property>
-        <property name="text">
-         <string>nhấn vào đây</string>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="pushButton_36">
-        <property name="geometry">
-         <rect>
-          <x>280</x>
-          <y>140</y>
-          <width>80</width>
-          <height>24</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">background-color: rgb(95, 95, 95);
-color: rgb(255, 255, 255);</string>
-        </property>
-        <property name="text">
-         <string>nhấn vào đây</string>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="pushButton_37">
-        <property name="geometry">
-         <rect>
-          <x>150</x>
-          <y>140</y>
-          <width>80</width>
-          <height>24</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">background-color: rgb(95, 95, 95);
-color: rgb(255, 255, 255);</string>
-        </property>
-        <property name="text">
-         <string>nhấn vào đây</string>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="pushButton_38">
-        <property name="geometry">
-         <rect>
-          <x>20</x>
-          <y>140</y>
-          <width>80</width>
-          <height>24</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">background-color: rgb(95, 95, 95);
-color: rgb(255, 255, 255);</string>
-        </property>
-        <property name="text">
-         <string>nhấn vào đây</string>
         </property>
        </widget>
       </widget>
       <widget class="QWidget" name="page_4">
-       <widget class="QLabel" name="label_15">
+       <widget class="QWidget" name="horizontalLayoutWidget_2">
         <property name="geometry">
          <rect>
-          <x>10</x>
+          <x>0</x>
           <y>0</y>
-          <width>771</width>
-          <height>151</height>
+          <width>791</width>
+          <height>171</height>
          </rect>
         </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="pixmap">
-         <pixmap>../img/Ảnh chụp màn hình 2025-02-28 215858.png</pixmap>
-        </property>
-        <property name="scaledContents">
-         <bool>true</bool>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="pushButton_39">
-        <property name="geometry">
-         <rect>
-          <x>410</x>
-          <y>140</y>
-          <width>80</width>
-          <height>24</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">background-color: rgb(95, 95, 95);
-color: rgb(255, 255, 255);</string>
-        </property>
-        <property name="text">
-         <string>nhấn vào đây</string>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="pushButton_40">
-        <property name="geometry">
-         <rect>
-          <x>280</x>
-          <y>140</y>
-          <width>80</width>
-          <height>24</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">background-color: rgb(95, 95, 95);
-color: rgb(255, 255, 255);</string>
-        </property>
-        <property name="text">
-         <string>nhấn vào đây</string>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="pushButton_41">
-        <property name="geometry">
-         <rect>
-          <x>20</x>
-          <y>140</y>
-          <width>80</width>
-          <height>24</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">background-color: rgb(95, 95, 95);
-color: rgb(255, 255, 255);</string>
-        </property>
-        <property name="text">
-         <string>nhấn vào đây</string>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="pushButton_42">
-        <property name="geometry">
-         <rect>
-          <x>150</x>
-          <y>140</y>
-          <width>80</width>
-          <height>24</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">background-color: rgb(95, 95, 95);
-color: rgb(255, 255, 255);</string>
-        </property>
-        <property name="text">
-         <string>nhấn vào đây</string>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="pushButton_43">
-        <property name="geometry">
-         <rect>
-          <x>550</x>
-          <y>140</y>
-          <width>80</width>
-          <height>24</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">background-color: rgb(95, 95, 95);
-color: rgb(255, 255, 255);</string>
-        </property>
-        <property name="text">
-         <string>nhấn vào đây</string>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="pushButton_44">
-        <property name="geometry">
-         <rect>
-          <x>680</x>
-          <y>140</y>
-          <width>80</width>
-          <height>24</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">background-color: rgb(95, 95, 95);
-color: rgb(255, 255, 255);</string>
-        </property>
-        <property name="text">
-         <string>nhấn vào đây</string>
-        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QPushButton" name="pushButton_3">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../img/Ảnh chụp màn hình 2025-02-28 215858-fotor-20250617191152.png</normaloff>../img/Ảnh chụp màn hình 2025-02-28 215858-fotor-20250617191152.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>180</width>
+             <height>180</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_4">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../img/Ảnh chụp màn hình 2025-02-28 215858-fotor-2025061719816.png</normaloff>../img/Ảnh chụp màn hình 2025-02-28 215858-fotor-2025061719816.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>180</width>
+             <height>180</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_10">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../img/Ảnh chụp màn hình 2025-02-28 215858-fotor-20250617191132.png</normaloff>../img/Ảnh chụp màn hình 2025-02-28 215858-fotor-20250617191132.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>180</width>
+             <height>180</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_5">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../img/Ảnh chụp màn hình 2025-02-28 215858-fotor-2025061719956.png</normaloff>../img/Ảnh chụp màn hình 2025-02-28 215858-fotor-2025061719956.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>180</width>
+             <height>180</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_7">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../img/Ảnh chụp màn hình 2025-02-28 215858-fotor-20250617191025.png</normaloff>../img/Ảnh chụp màn hình 2025-02-28 215858-fotor-20250617191025.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>180</width>
+             <height>180</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+        </layout>
        </widget>
       </widget>
      </widget>
@@ -667,7 +541,7 @@ border-radius: 15px;</string>
          <string/>
         </property>
        </widget>
-       <widget class="QPushButton" name="pushButton_28">
+       <widget class="QPushButton" name="btn_save">
         <property name="geometry">
          <rect>
           <x>320</x>
@@ -725,22 +599,21 @@ font: 15pt &quot;Segoe UI&quot;;
         <property name="font">
          <font>
           <family>Arial</family>
-          <pointsize>-1</pointsize>
           <bold>true</bold>
          </font>
         </property>
         <property name="styleSheet">
          <string notr="true">border-radius: 40px;
 background-color: rgb(0, 0, 0);
-color: rgb(255, 255, 255);</string>
+</string>
         </property>
         <property name="text">
-         <string>chọn ảnh</string>
+         <string/>
         </property>
         <property name="iconSize">
          <size>
-          <width>30</width>
-          <height>30</height>
+          <width>100</width>
+          <height>100</height>
          </size>
         </property>
        </widget>
@@ -807,7 +680,7 @@ font: 15pt &quot;Segoe UI&quot;;
        <zorder>label_42</zorder>
        <zorder>label_44</zorder>
        <zorder>txt_email</zorder>
-       <zorder>pushButton_28</zorder>
+       <zorder>btn_save</zorder>
        <zorder>txt_name</zorder>
        <zorder>btn_avatar</zorder>
        <zorder>label_17</zorder>

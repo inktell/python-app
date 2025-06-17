@@ -210,6 +210,9 @@ class Home(QMainWindow):
         self.btn_right.clicked.connect(lambda : self.navSellScreen(1,True))
         self.btn_left.clicked.connect(lambda : self.navSellScreen(0))
 
+        self.btn_luu = self.findChild(QPushButton,"btn_save")
+
+
     def navMainScreen(self, index):
         self.main_window.setCurrentIndex(index)
 
@@ -242,6 +245,7 @@ class Home(QMainWindow):
                 self.user["avatar"] = file
                 self.btn_avatar.setIcon(QIcon(file))
                 update_avatar_user(self.user_id, file)
+
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
