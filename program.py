@@ -100,6 +100,7 @@ class Register(QMainWindow):
         self.btn_eye_p.clicked.connect(lambda : self.hiddenOrShow(self.password,self.btn_eye_p))
         self.btn_eye_cp.clicked.connect(lambda : self.hiddenOrShow(self.confirm_password,self.btn_eye_cp))
 
+
     def hiddenOrShow(self,input:QLineEdit,btn:QPushButton):
         if input.echoMode() == QLineEdit.EchoMode.Password:
             input.setEchoMode(QLineEdit.EchoMode.Normal)
@@ -165,7 +166,7 @@ class Register(QMainWindow):
         self.login = Login()
         self.login.show()
         self.close()
-        
+
 class Home(QMainWindow):
     def __init__(self,user_id):
         super(Home,self).__init__()
@@ -212,7 +213,6 @@ class Home(QMainWindow):
 
         self.btn_luu = self.findChild(QPushButton,"btn_save")
 
-
     def navMainScreen(self, index):
         self.main_window.setCurrentIndex(index)
 
@@ -222,8 +222,12 @@ class Home(QMainWindow):
     def loadAccountInfo(self):
         self.txt_name = self.findChild(QLineEdit,"txt_name")
         self.txt_email = self.findChild(QLineEdit,"txt_email")
+
         self.txt_name.setText(self.user["name"])
         self.txt_email.setText(self.user["email"])
+
+        if self.user["avatar"]:
+            self.btn_avatar.setIcon(QIcon("img/user.png"))
 
     def navSellScreen(self,index,plus=False):
         if plus:
@@ -238,7 +242,6 @@ class Home(QMainWindow):
                 self.current_danhmuc_index -= 1
         self.danhmuc_widget.setCurrentIndex(self.current_danhmuc_index)
 
-    
     def update_avatar(self):
             file = QFileDialog.getOpenFileName(self, "Chọn ảnh đại diện", "", "Images (*.png *.jpg *.jpeg)")[0]
             if file:
