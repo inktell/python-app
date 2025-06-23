@@ -1,3 +1,4 @@
+import os
 from PyQt6 import QtWidgets,QtCore
 from PyQt6.QtWidgets import *
 from PyQt6.QtGui import *
@@ -223,11 +224,10 @@ class Home(QMainWindow):
         self.txt_name = self.findChild(QLineEdit,"txt_name")
         self.txt_email = self.findChild(QLineEdit,"txt_email")
 
+        if self.user["avatar"]:
+            self.btn_avatar.setIcon(QIcon(self.user["avatar"]))
         self.txt_name.setText(self.user["name"])
         self.txt_email.setText(self.user["email"])
-
-        if self.user["avatar"]:
-            self.btn_avatar.setIcon(QIcon("img/user.png"))
 
     def navSellScreen(self,index,plus=False):
         if plus:
@@ -248,7 +248,6 @@ class Home(QMainWindow):
                 self.user["avatar"] = file
                 self.btn_avatar.setIcon(QIcon(file))
                 update_avatar_user(self.user_id, file)
-
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)

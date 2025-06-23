@@ -124,7 +124,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="page">
      <widget class="QLabel" name="label_4">
@@ -228,8 +228,8 @@
          <rect>
           <x>0</x>
           <y>0</y>
-          <width>1016</width>
-          <height>188</height>
+          <width>801</width>
+          <height>171</height>
          </rect>
         </property>
         <layout class="QHBoxLayout" name="horizontalLayout">
@@ -469,7 +469,7 @@ background: none;</string>
          <rect>
           <x>30</x>
           <y>100</y>
-          <width>271</width>
+          <width>311</width>
           <height>16</height>
          </rect>
         </property>
@@ -591,7 +591,7 @@ font: 15pt &quot;Segoe UI&quot;;
         <property name="geometry">
          <rect>
           <x>290</x>
-          <y>150</y>
+          <y>160</y>
           <width>81</width>
           <height>81</height>
          </rect>
@@ -603,9 +603,9 @@ font: 15pt &quot;Segoe UI&quot;;
          </font>
         </property>
         <property name="styleSheet">
-         <string notr="true">border-radius: 40px;
-background-color: rgb(0, 0, 0);
-</string>
+         <string notr="true">color: rgb(255, 255, 255);
+    border-radius: 40px;
+background-color: rgb(0, 0, 0);</string>
         </property>
         <property name="text">
          <string/>

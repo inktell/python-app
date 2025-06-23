@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1153</width>
-    <height>609</height>
+    <width>749</width>
+    <height>571</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -33,185 +33,17 @@
      <string/>
     </property>
    </widget>
-   <widget class="QFrame" name="frame_2">
-    <property name="geometry">
-     <rect>
-      <x>780</x>
-      <y>230</y>
-      <width>271</width>
-      <height>80</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border: none;</string>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::Shape::StyledPanel</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Shadow::Raised</enum>
-    </property>
-    <widget class="QLineEdit" name="txt_email">
-     <property name="geometry">
-      <rect>
-       <x>0</x>
-       <y>10</y>
-       <width>271</width>
-       <height>51</height>
-      </rect>
-     </property>
-     <property name="accessibleName">
-      <string/>
-     </property>
-     <property name="accessibleDescription">
-      <string/>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">    background-color: #f9f9f9;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 8px 12px;
-    font-size: 14px;
-    color: #333;</string>
-     </property>
-     <property name="inputMask">
-      <string/>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-     <property name="placeholderText">
-      <string>Email</string>
-     </property>
-    </widget>
-   </widget>
-   <widget class="QFrame" name="frame_3">
-    <property name="geometry">
-     <rect>
-      <x>760</x>
-      <y>300</y>
-      <width>381</width>
-      <height>97</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border: none;</string>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::Shape::StyledPanel</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Shadow::Raised</enum>
-    </property>
-    <widget class="QLineEdit" name="txt_password">
-     <property name="geometry">
-      <rect>
-       <x>50</x>
-       <y>10</y>
-       <width>271</width>
-       <height>51</height>
-      </rect>
-     </property>
-     <property name="accessibleName">
-      <string/>
-     </property>
-     <property name="accessibleDescription">
-      <string/>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">    background-color: #f9f9f9;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 8px 12px;
-    font-size: 14px;
-    color: #333;</string>
-     </property>
-     <property name="inputMask">
-      <string/>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-     <property name="echoMode">
-      <enum>QLineEdit::EchoMode::Password</enum>
-     </property>
-     <property name="placeholderText">
-      <string>Password</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="btn_eye_p">
-     <property name="geometry">
-      <rect>
-       <x>260</x>
-       <y>10</y>
-       <width>61</width>
-       <height>51</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">border: none;
-background: none;</string>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-     <property name="icon">
-      <iconset>
-       <normaloff>../img/eye-slash-solid.svg</normaloff>../img/eye-slash-solid.svg</iconset>
-     </property>
-     <property name="iconSize">
-      <size>
-       <width>32</width>
-       <height>32</height>
-      </size>
-     </property>
-    </widget>
-   </widget>
-   <widget class="QWidget" name="">
-    <property name="geometry">
-     <rect>
-      <x>770</x>
-      <y>150</y>
-      <width>481</width>
-      <height>435</height>
-     </rect>
-    </property>
-    <layout class="QHBoxLayout" name="horizontalLayout">
-     <item>
-      <spacer name="horizontalSpacer">
-       <property name="orientation">
-        <enum>Qt::Orientation::Horizontal</enum>
-       </property>
-       <property name="sizeHint" stdset="0">
-        <size>
-         <width>40</width>
-         <height>20</height>
-        </size>
-       </property>
-      </spacer>
-     </item>
-     <item>
-      <widget class="QLabel" name="label">
-       <property name="styleSheet">
-        <string notr="true">    color: #a0a0a0; /* Màu chữ xám nhạt */
-    font-size: 14px;
-    font-weight: normal;</string>
-       </property>
-       <property name="text">
-        <string>Forgot a pasword?</string>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
    <widget class="QFrame" name="frame">
     <property name="geometry">
      <rect>
-      <x>770</x>
-      <y>410</y>
-      <width>381</width>
-      <height>41</height>
+      <x>520</x>
+      <y>480</y>
+      <width>201</width>
+      <height>31</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: none;</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::Shape::StyledPanel</enum>
@@ -234,13 +66,13 @@ background: none;</string>
     font-weight: normal;</string>
      </property>
      <property name="text">
-      <string>Don't have an account</string>
+      <string>bạn mới biết điến shInk?</string>
      </property>
     </widget>
     <widget class="QPushButton" name="btn_register">
      <property name="geometry">
       <rect>
-       <x>130</x>
+       <x>140</x>
        <y>0</y>
        <width>71</width>
        <height>31</height>
@@ -258,13 +90,13 @@ border: none;</string>
      </property>
     </widget>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
-      <x>770</x>
-      <y>300</y>
+      <x>340</x>
+      <y>430</y>
       <width>381</width>
-      <height>252</height>
+      <height>51</height>
      </rect>
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout_2">
@@ -292,7 +124,7 @@ border: none;</string>
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="face">
+      <widget class="QPushButton" name="facebook">
        <property name="styleSheet">
         <string notr="true">background-color: #ffffff; /* Nền trắng */
     color: #000000; /* Chữ màu đen */
@@ -319,8 +151,8 @@ border: none;</string>
    <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
-      <x>1030</x>
-      <y>40</y>
+      <x>490</x>
+      <y>380</y>
       <width>83</width>
       <height>71</height>
      </rect>
@@ -338,8 +170,8 @@ border: none;</string>
    <widget class="QPushButton" name="btn_login">
     <property name="geometry">
      <rect>
-      <x>860</x>
-      <y>80</y>
+      <x>350</x>
+      <y>350</y>
       <width>364</width>
       <height>40</height>
      </rect>
@@ -378,8 +210,8 @@ border: none;</string>
    <widget class="QLabel" name="label_8">
     <property name="geometry">
      <rect>
-      <x>520</x>
-      <y>40</y>
+      <x>430</x>
+      <y>50</y>
       <width>201</width>
       <height>61</height>
      </rect>
@@ -397,8 +229,8 @@ border: none;</string>
    <widget class="QLabel" name="label_5">
     <property name="geometry">
      <rect>
-      <x>200</x>
-      <y>50</y>
+      <x>440</x>
+      <y>110</y>
       <width>181</width>
       <height>51</height>
      </rect>
@@ -416,10 +248,10 @@ border: none;</string>
    <widget class="QLabel" name="label_6">
     <property name="geometry">
      <rect>
-      <x>450</x>
-      <y>110</y>
-      <width>231</width>
-      <height>31</height>
+      <x>440</x>
+      <y>150</y>
+      <width>180</width>
+      <height>17</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -432,13 +264,165 @@ border: none;</string>
      <string> Please login to your account</string>
     </property>
    </widget>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>180</y>
+      <width>291</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QFrame" name="frame_2">
+       <property name="styleSheet">
+        <string notr="true">border: none;</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Shape::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Shadow::Raised</enum>
+       </property>
+       <widget class="QLineEdit" name="txt_email">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>271</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="accessibleName">
+         <string/>
+        </property>
+        <property name="accessibleDescription">
+         <string/>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 14px;
+    color: #333;</string>
+        </property>
+        <property name="inputMask">
+         <string/>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="placeholderText">
+         <string>Email</string>
+        </property>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <widget class="QFrame" name="frame_3">
+       <property name="styleSheet">
+        <string notr="true">border: none;</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Shape::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Shadow::Raised</enum>
+       </property>
+       <widget class="QLineEdit" name="txt_password">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>0</y>
+          <width>271</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="accessibleName">
+         <string/>
+        </property>
+        <property name="accessibleDescription">
+         <string/>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 14px;
+    color: #333;</string>
+        </property>
+        <property name="inputMask">
+         <string/>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="echoMode">
+         <enum>QLineEdit::EchoMode::Password</enum>
+        </property>
+        <property name="placeholderText">
+         <string>Password</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btn_eye_p">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>0</y>
+          <width>61</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border: none;
+background: none;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../img/eye-slash-solid.svg</normaloff>../img/eye-slash-solid.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>32</width>
+          <height>32</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>50</y>
+          <width>121</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">    color: #a0a0a0; /* Màu chữ xám nhạt */
+    font-size: 14px;
+    font-weight: normal;</string>
+        </property>
+        <property name="text">
+         <string>Forgot a pasword?</string>
+        </property>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1153</width>
+     <width>749</width>
      <height>23</height>
     </rect>
    </property>
