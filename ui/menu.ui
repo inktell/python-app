@@ -124,7 +124,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="page">
      <widget class="QLabel" name="label_4">
@@ -228,8 +228,8 @@
          <rect>
           <x>0</x>
           <y>0</y>
-          <width>801</width>
-          <height>171</height>
+          <width>1016</width>
+          <height>188</height>
          </rect>
         </property>
         <layout class="QHBoxLayout" name="horizontalLayout">
