@@ -124,7 +124,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>2</number>
     </property>
     <widget class="QWidget" name="page">
      <widget class="QLabel" name="label_4">
@@ -1647,25 +1647,6 @@ background: none;</string>
        <bool>true</bool>
       </property>
      </widget>
-     <widget class="QLabel" name="label_27">
-      <property name="geometry">
-       <rect>
-        <x>70</x>
-        <y>50</y>
-        <width>121</width>
-        <height>161</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>../img/Ảnh chụp màn hình 2025-02-09 174244.png</pixmap>
-      </property>
-      <property name="scaledContents">
-       <bool>true</bool>
-      </property>
-     </widget>
      <widget class="QLabel" name="label_28">
       <property name="geometry">
        <rect>
@@ -1683,203 +1664,6 @@ background: none;</string>
        <string/>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton">
-      <property name="geometry">
-       <rect>
-        <x>90</x>
-        <y>210</y>
-        <width>80</width>
-        <height>24</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background-color: rgb(95, 95, 95);
-color: rgb(255, 255, 255);</string>
-      </property>
-      <property name="text">
-       <string>nhấn vào đây</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pushButton_8">
-      <property name="geometry">
-       <rect>
-        <x>230</x>
-        <y>210</y>
-        <width>80</width>
-        <height>24</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background-color: rgb(95, 95, 95);
-color: rgb(255, 255, 255);</string>
-      </property>
-      <property name="text">
-       <string>nhán vào đây</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pushButton_9">
-      <property name="geometry">
-       <rect>
-        <x>360</x>
-        <y>210</y>
-        <width>80</width>
-        <height>24</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background-color: rgb(95, 95, 95);
-color: rgb(255, 255, 255);</string>
-      </property>
-      <property name="text">
-       <string>nhấn vào đây</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pushButton_17">
-      <property name="geometry">
-       <rect>
-        <x>500</x>
-        <y>210</y>
-        <width>80</width>
-        <height>24</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background-color: rgb(95, 95, 95);
-color: rgb(255, 255, 255);</string>
-      </property>
-      <property name="text">
-       <string>nhấn vào đây</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_29">
-      <property name="geometry">
-       <rect>
-        <x>218</x>
-        <y>50</y>
-        <width>111</width>
-        <height>161</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>../img/Ảnh chụp màn hình 2025-02-09 174908.png</pixmap>
-      </property>
-      <property name="scaledContents">
-       <bool>true</bool>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_30">
-      <property name="geometry">
-       <rect>
-        <x>350</x>
-        <y>50</y>
-        <width>111</width>
-        <height>161</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>../img/Ảnh chụp màn hình 2025-02-09 174933.png</pixmap>
-      </property>
-      <property name="scaledContents">
-       <bool>true</bool>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_31">
-      <property name="geometry">
-       <rect>
-        <x>480</x>
-        <y>40</y>
-        <width>121</width>
-        <height>181</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>../img/Ảnh chụp màn hình 2025-02-09 175156.png</pixmap>
-      </property>
-      <property name="scaledContents">
-       <bool>true</bool>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_32">
-      <property name="geometry">
-       <rect>
-        <x>620</x>
-        <y>50</y>
-        <width>131</width>
-        <height>171</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>../img/Ảnh chụp màn hình 2025-02-09 175225.png</pixmap>
-      </property>
-      <property name="scaledContents">
-       <bool>true</bool>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_33">
-      <property name="geometry">
-       <rect>
-        <x>770</x>
-        <y>60</y>
-        <width>121</width>
-        <height>161</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>../img/Ảnh chụp màn hình 2025-02-09 175255.png</pixmap>
-      </property>
-      <property name="scaledContents">
-       <bool>true</bool>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pushButton_22">
-      <property name="geometry">
-       <rect>
-        <x>650</x>
-        <y>210</y>
-        <width>80</width>
-        <height>24</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background-color: rgb(95, 95, 95);
-color: rgb(255, 255, 255);</string>
-      </property>
-      <property name="text">
-       <string>nhấn vào đây</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pushButton_23">
-      <property name="geometry">
-       <rect>
-        <x>800</x>
-        <y>210</y>
-        <width>80</width>
-        <height>24</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background-color: rgb(95, 95, 95);
-color: rgb(255, 255, 255);</string>
-      </property>
-      <property name="text">
-       <string>nhấn vào đây</string>
-      </property>
-     </widget>
      <widget class="QLabel" name="label_34">
       <property name="geometry">
        <rect>
@@ -1895,44 +1679,6 @@ color: rgb(255, 255, 255);</string>
       </property>
       <property name="text">
        <string/>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_35">
-      <property name="geometry">
-       <rect>
-        <x>70</x>
-        <y>260</y>
-        <width>831</width>
-        <height>81</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>../img/Ảnh chụp màn hình 2025-02-09 175941.png</pixmap>
-      </property>
-      <property name="scaledContents">
-       <bool>true</bool>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_36">
-      <property name="geometry">
-       <rect>
-        <x>80</x>
-        <y>370</y>
-        <width>151</width>
-        <height>181</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>../img/Ảnh chụp màn hình 2025-02-09 181321.png</pixmap>
-      </property>
-      <property name="scaledContents">
-       <bool>true</bool>
       </property>
      </widget>
      <widget class="QLabel" name="label_37">
@@ -2028,25 +1774,6 @@ color: rgb(255, 255, 255);</string>
        <bool>true</bool>
       </property>
      </widget>
-     <widget class="QLabel" name="label_43">
-      <property name="geometry">
-       <rect>
-        <x>230</x>
-        <y>370</y>
-        <width>651</width>
-        <height>171</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>../img/Ảnh chụp màn hình 2025-02-11 222046.png</pixmap>
-      </property>
-      <property name="scaledContents">
-       <bool>true</bool>
-      </property>
-     </widget>
      <widget class="QPushButton" name="pushButton_24">
       <property name="geometry">
        <rect>
@@ -2134,27 +1861,42 @@ color: rgb(255, 255, 255);</string>
        <bool>true</bool>
       </property>
      </widget>
+     <widget class="QWidget" name="horizontalLayoutWidget_3">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>20</y>
+        <width>851</width>
+        <height>211</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QWidget" name="widget_6" native="true"/>
+       </item>
+       <item>
+        <widget class="QWidget" name="widget_5" native="true"/>
+       </item>
+       <item>
+        <widget class="QWidget" name="widget_4" native="true"/>
+       </item>
+       <item>
+        <widget class="QWidget" name="widget_2" native="true"/>
+       </item>
+       <item>
+        <widget class="QWidget" name="widget_3" native="true"/>
+       </item>
+       <item>
+        <widget class="QWidget" name="widget" native="true"/>
+       </item>
+      </layout>
+     </widget>
      <zorder>label_25</zorder>
-     <zorder>label_37</zorder>
-     <zorder>label_43</zorder>
-     <zorder>label_58</zorder>
      <zorder>label_28</zorder>
+     <zorder>label_37</zorder>
+     <zorder>label_58</zorder>
      <zorder>label_26</zorder>
-     <zorder>label_27</zorder>
-     <zorder>pushButton</zorder>
-     <zorder>label_29</zorder>
-     <zorder>label_30</zorder>
-     <zorder>label_31</zorder>
-     <zorder>label_32</zorder>
-     <zorder>label_33</zorder>
-     <zorder>pushButton_8</zorder>
-     <zorder>pushButton_9</zorder>
-     <zorder>pushButton_17</zorder>
-     <zorder>pushButton_22</zorder>
-     <zorder>pushButton_23</zorder>
      <zorder>label_34</zorder>
-     <zorder>label_35</zorder>
-     <zorder>label_36</zorder>
      <zorder>label_38</zorder>
      <zorder>label_39</zorder>
      <zorder>label_40</zorder>
@@ -2163,6 +1905,7 @@ color: rgb(255, 255, 255);</string>
      <zorder>pushButton_26</zorder>
      <zorder>pushButton_27</zorder>
      <zorder>pushButton_25</zorder>
+     <zorder>horizontalLayoutWidget_3</zorder>
     </widget>
     <widget class="QWidget" name="page_12">
      <widget class="QLabel" name="label_65">
