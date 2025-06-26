@@ -222,6 +222,9 @@ class Home(QMainWindow):
 
         self.btn_up_pass.clicked.connect(self.update_password)
 
+        self.btn_re_user = self.findChild(QPushButton,"btn_re_user")
+        self.btn_re_user.clicked.connect(self.remove_user)
+
     def navMainScreen(self, index):
         self.main_window.setCurrentIndex(index)
 
@@ -269,13 +272,13 @@ class Home(QMainWindow):
                 update_avatar_user(self.user_id, file)
                 
     def update_info(self):
-        self.msg = MessageBox()
         name = self.txt_name.text().strip()
         email = self.txt_email.text().strip()
         gender = self.cb_gender.currentText()
-        
+
         update_user(self.user_id, name, email, gender)
         self.msg.success_box("Cập nhật thông tin thành công")
+
 
     def update_password(self):
         self.msg = MessageBox()
@@ -299,6 +302,17 @@ class Home(QMainWindow):
         update_password_user(self.user_id, new_pass)
         self.msg.success_box("Cập nhật mật khẩu thành công")
         
+    def remove_user(self):
+        self.msg = MessageBox()
+        user = get_user_by_id(self.user_id)
+        if user is None:
+            self.msg.error_box("Người dùng không tồn tại")
+            return
+        
+        remove_user(self.user_id)
+        self.msg.success_box("Xóa tài khoản thành công")
+        self.show_login()
+
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     login = Login()

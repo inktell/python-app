@@ -60,10 +60,10 @@ def update_avatar_user(id, avatar):
     conn.commit()
     conn.close()
 
-def update_user(id, name, email, password):
+def update_user(id, name, email, gender):
     conn = connect_db()
     cursor = conn.cursor()
-    cursor.execute("UPDATE users SET name = ?, email = ?, password = ? WHERE id = ?", (name, email, password, id))
+    cursor.execute("UPDATE users SET name = ?, email = ?, gender = ? WHERE id = ?", (name, email, gender, id))
     conn.commit()
     conn.close()
 
