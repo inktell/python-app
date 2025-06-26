@@ -73,3 +73,10 @@ def remove_user(id):
     cursor.execute("DELETE FROM users WHERE id = ?", (id,))
     conn.commit()
     conn.close()
+
+def update_password_user(id, password):
+    conn = connect_db()
+    cursor = conn.cursor()
+    cursor.execute("UPDATE users SET password = ? WHERE id = ?", (password, id))
+    conn.commit()
+    conn.close()

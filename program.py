@@ -213,6 +213,14 @@ class Home(QMainWindow):
         self.btn_left.clicked.connect(lambda : self.navSellScreen(0))
 
         self.btn_luu = self.findChild(QPushButton,"btn_save")
+        self.btn_luu.clicked.connect(self.update_info)
+
+        self.txt_pass_old = self.findChild(QLineEdit,"txt_pass_old")
+        self.txt_pass_new = self.findChild(QLineEdit,"txt_pass_new")
+        self.txt_pass_new2 = self.findChild(QLineEdit,"txt_pass_new2")
+        self.btn_up_pass = self.findChild(QPushButton,"btn_up_pass")
+
+        self.btn_up_pass.clicked.connect(self.update_password)
 
     def navMainScreen(self, index):
         self.main_window.setCurrentIndex(index)
@@ -223,9 +231,20 @@ class Home(QMainWindow):
     def loadAccountInfo(self):
         self.txt_name = self.findChild(QLineEdit,"txt_name")
         self.txt_email = self.findChild(QLineEdit,"txt_email")
+        self.cb_gender = self.findChild(QComboBox,"cb_gender")
 
         if self.user["avatar"]:
             self.btn_avatar.setIcon(QIcon(self.user["avatar"]))
+
+        if not self.user["gender"]:
+            self.cb_gender.setCurrentIndex(0)
+        elif self.user["gender"] == "Nam":
+            self.cb_gender.setCurrentIndex(1)
+        elif self.user["gender"] == "Nữ":
+            self.cb_gender.setCurrentIndex(2)
+        else:
+            self.cb_gender.setCurrentIndex(3)
+
         self.txt_name.setText(self.user["name"])
         self.txt_email.setText(self.user["email"])
 
@@ -248,7 +267,38 @@ class Home(QMainWindow):
                 self.user["avatar"] = file
                 self.btn_avatar.setIcon(QIcon(file))
                 update_avatar_user(self.user_id, file)
+                
+    def update_info(self):
+        self.msg = MessageBox()
+        name = self.txt_name.text().strip()
+        email = self.txt_email.text().strip()
+        gender = self.cb_gender.currentText()
+        
+        update_user(self.user_id, name, email, gender)
+        self.msg.success_box("Cập nhật thông tin thành công")
 
+    def update_password(self):
+        self.msg = MessageBox()
+        old_pass = self.txt_pass_old.text().strip()
+        new_pass = self.txt_pass_new.text().strip()
+        new_pass2 = self.txt_pass_new2.text().strip()
+
+        if old_pass == "" or new_pass == "" or new_pass2 == "":
+            self.msg.error_box("Không thể để trống")
+            return
+        
+        if new_pass != new_pass2:
+            self.msg.error_box("Mật khẩu mới không trùng khớp")
+            return
+        
+        user = get_user_by_id(self.user_id)
+        if user["password"] != old_pass:
+            self.msg.error_box("Mật khẩu cũ không đúng")
+            return
+        
+        update_password_user(self.user_id, new_pass)
+        self.msg.success_box("Cập nhật mật khẩu thành công")
+        
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     login = Login()
