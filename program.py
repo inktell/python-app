@@ -304,15 +304,16 @@ class Home(QMainWindow):
         
     def remove_user(self):
         self.msg = MessageBox()
-        user = get_user_by_id(self.user_id)
-        if user is None:
-            self.msg.error_box("Người dùng không tồn tại")
-            return
-        
+
         remove_user(self.user_id)
         self.msg.success_box("Xóa tài khoản thành công")
         self.show_login()
 
+    def show_login(self):
+        self.login = Login()
+        self.login.show()
+        self.close()
+        
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     login = Login()
