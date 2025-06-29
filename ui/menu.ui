@@ -228,95 +228,25 @@
          <rect>
           <x>0</x>
           <y>0</y>
-          <width>1016</width>
-          <height>188</height>
+          <width>801</width>
+          <height>171</height>
          </rect>
         </property>
         <layout class="QHBoxLayout" name="horizontalLayout">
          <item>
-          <widget class="QPushButton" name="pushButton_3">
-           <property name="text">
-            <string/>
-           </property>
-           <property name="icon">
-            <iconset>
-             <normaloff>../img/Ảnh chụp màn hình 2025-02-28 215858-fotor-20250617191152.png</normaloff>../img/Ảnh chụp màn hình 2025-02-28 215858-fotor-20250617191152.png</iconset>
-           </property>
-           <property name="iconSize">
-            <size>
-             <width>180</width>
-             <height>180</height>
-            </size>
-           </property>
-          </widget>
+          <widget class="QWidget" name="widget_13" native="true"/>
          </item>
          <item>
-          <widget class="QPushButton" name="pushButton_4">
-           <property name="text">
-            <string/>
-           </property>
-           <property name="icon">
-            <iconset>
-             <normaloff>../img/Ảnh chụp màn hình 2025-02-28 215858-fotor-2025061719816.png</normaloff>../img/Ảnh chụp màn hình 2025-02-28 215858-fotor-2025061719816.png</iconset>
-           </property>
-           <property name="iconSize">
-            <size>
-             <width>180</width>
-             <height>180</height>
-            </size>
-           </property>
-          </widget>
+          <widget class="QWidget" name="widget_15" native="true"/>
          </item>
          <item>
-          <widget class="QPushButton" name="pushButton_10">
-           <property name="text">
-            <string/>
-           </property>
-           <property name="icon">
-            <iconset>
-             <normaloff>../img/Ảnh chụp màn hình 2025-02-28 215858-fotor-20250617191132.png</normaloff>../img/Ảnh chụp màn hình 2025-02-28 215858-fotor-20250617191132.png</iconset>
-           </property>
-           <property name="iconSize">
-            <size>
-             <width>180</width>
-             <height>180</height>
-            </size>
-           </property>
-          </widget>
+          <widget class="QWidget" name="widget_16" native="true"/>
          </item>
          <item>
-          <widget class="QPushButton" name="pushButton_5">
-           <property name="text">
-            <string/>
-           </property>
-           <property name="icon">
-            <iconset>
-             <normaloff>../img/Ảnh chụp màn hình 2025-02-28 215858-fotor-2025061719956.png</normaloff>../img/Ảnh chụp màn hình 2025-02-28 215858-fotor-2025061719956.png</iconset>
-           </property>
-           <property name="iconSize">
-            <size>
-             <width>180</width>
-             <height>180</height>
-            </size>
-           </property>
-          </widget>
+          <widget class="QWidget" name="widget_17" native="true"/>
          </item>
          <item>
-          <widget class="QPushButton" name="pushButton_7">
-           <property name="text">
-            <string/>
-           </property>
-           <property name="icon">
-            <iconset>
-             <normaloff>../img/Ảnh chụp màn hình 2025-02-28 215858-fotor-20250617191025.png</normaloff>../img/Ảnh chụp màn hình 2025-02-28 215858-fotor-20250617191025.png</iconset>
-           </property>
-           <property name="iconSize">
-            <size>
-             <width>180</width>
-             <height>180</height>
-            </size>
-           </property>
-          </widget>
+          <widget class="QWidget" name="widget_14" native="true"/>
          </item>
         </layout>
        </widget>
@@ -461,7 +391,7 @@
 background: none;</string>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>3</number>
       </property>
       <widget class="QWidget" name="page_5">
        <widget class="QLabel" name="label_44">
@@ -1041,7 +971,7 @@ background: none;</string>
          </size>
         </property>
        </widget>
-       <widget class="QPushButton" name="btn_eye_p_2">
+       <widget class="QPushButton" name="btn_eye_p_3">
         <property name="geometry">
          <rect>
           <x>470</x>
@@ -1068,7 +998,7 @@ background: none;</string>
          </size>
         </property>
        </widget>
-       <widget class="QPushButton" name="btn_eye_p_3">
+       <widget class="QPushButton" name="btn_eye_p_2">
         <property name="geometry">
          <rect>
           <x>470</x>
@@ -1178,8 +1108,8 @@ color: rgb(255, 255, 255);</string>
        <zorder>txt_pass_new</zorder>
        <zorder>txt_pass_new2</zorder>
        <zorder>btn_eye_p</zorder>
-       <zorder>btn_eye_p_2</zorder>
        <zorder>btn_eye_p_3</zorder>
+       <zorder>btn_eye_p_2</zorder>
        <zorder>label_48</zorder>
        <zorder>label_49</zorder>
        <zorder>btn_up_pass</zorder>
