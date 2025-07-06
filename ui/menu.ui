@@ -124,7 +124,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>3</number>
     </property>
     <widget class="QWidget" name="page">
      <widget class="QLabel" name="label_4">
@@ -223,32 +223,15 @@
        </widget>
       </widget>
       <widget class="QWidget" name="page_4">
-       <widget class="QWidget" name="horizontalLayoutWidget_2">
+       <widget class="QWidget" name="widget_14" native="true">
         <property name="geometry">
          <rect>
           <x>0</x>
           <y>0</y>
-          <width>801</width>
-          <height>171</height>
+          <width>155</width>
+          <height>169</height>
          </rect>
         </property>
-        <layout class="QHBoxLayout" name="horizontalLayout">
-         <item>
-          <widget class="QWidget" name="widget_13" native="true"/>
-         </item>
-         <item>
-          <widget class="QWidget" name="widget_15" native="true"/>
-         </item>
-         <item>
-          <widget class="QWidget" name="widget_16" native="true"/>
-         </item>
-         <item>
-          <widget class="QWidget" name="widget_17" native="true"/>
-         </item>
-         <item>
-          <widget class="QWidget" name="widget_14" native="true"/>
-         </item>
-        </layout>
        </widget>
       </widget>
      </widget>
@@ -391,7 +374,7 @@
 background: none;</string>
       </property>
       <property name="currentIndex">
-       <number>3</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="page_5">
        <widget class="QLabel" name="label_44">
@@ -1926,6 +1909,32 @@ Shopee</string>
        <string/>
       </property>
      </widget>
+     <widget class="QPushButton" name="pushButton">
+      <property name="geometry">
+       <rect>
+        <x>700</x>
+        <y>430</y>
+        <width>94</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>PushButton</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_3">
+      <property name="geometry">
+       <rect>
+        <x>520</x>
+        <y>430</y>
+        <width>94</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>PushButton</string>
+      </property>
+     </widget>
      <zorder>label_85</zorder>
      <zorder>label_65</zorder>
      <zorder>label_66</zorder>
@@ -1942,6 +1951,8 @@ Shopee</string>
      <zorder>label_82</zorder>
      <zorder>label_83</zorder>
      <zorder>label_84</zorder>
+     <zorder>pushButton</zorder>
+     <zorder>pushButton_3</zorder>
     </widget>
     <widget class="QWidget" name="page_11">
      <widget class="QLabel" name="label_52">

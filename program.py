@@ -222,7 +222,7 @@ class Home(QMainWindow):
         self.btn_eye_p = self.findChild(QPushButton,"btn_eye_p")
         self.btn_eye_p_2 = self.findChild(QPushButton,"btn_eye_p_2")
         self.btn_eye_p_3 = self.findChild(QPushButton,"btn_eye_p_3")
-
+        
         self.btn_up_pass.clicked.connect(self.update_password)
         self.btn_eye_p.clicked.connect(lambda : self.hiddenOrShow(self.txt_pass_old,self.btn_eye_p))
         self.btn_eye_p_2.clicked.connect(lambda : self.hiddenOrShow(self.txt_pass_new,self.btn_eye_p_2))
