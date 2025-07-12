@@ -213,7 +213,8 @@ class Home(QMainWindow):
         self.btn_left.clicked.connect(lambda : self.navSellScreen(0))
 
         self.btn_luu = self.findChild(QPushButton,"btn_save")
-        self.btn_luu.clicked.connect(self.update_info and self.navAccountScreen(0))
+        self.btn_luu.clicked.connect(self.update_info)
+        self.btn_luu.clicked.connect(lambda :self.navAccountScreen(0))
 
         self.txt_pass_old = self.findChild(QLineEdit,"txt_pass_old")
         self.txt_pass_new = self.findChild(QLineEdit,"txt_pass_new")
