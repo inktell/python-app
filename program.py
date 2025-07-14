@@ -208,7 +208,6 @@ class Home(QMainWindow):
         self.btn_nap_setting.clicked.connect(lambda : self.navAccountScreen(4))
         self.btn_bell.clicked.connect(lambda : self.navAccountScreen(1))
 
-
         self.btn_luu = self.findChild(QPushButton,"btn_save")
         self.btn_luu.clicked.connect(self.update_info)
         self.btn_luu.clicked.connect(lambda :self.navAccountScreen(0))
