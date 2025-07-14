@@ -208,9 +208,6 @@ class Home(QMainWindow):
         self.btn_nap_setting.clicked.connect(lambda : self.navAccountScreen(4))
         self.btn_bell.clicked.connect(lambda : self.navAccountScreen(1))
 
-        self.current_danhmuc_index = 0
-        self.btn_right.clicked.connect(lambda : self.navSellScreen(1,True))
-        self.btn_left.clicked.connect(lambda : self.navSellScreen(0))
 
         self.btn_luu = self.findChild(QPushButton,"btn_save")
         self.btn_luu.clicked.connect(self.update_info)
@@ -257,19 +254,6 @@ class Home(QMainWindow):
 
         self.txt_name.setText(self.user["name"])
         self.txt_email.setText(self.user["email"])
-
-    def navSellScreen(self,index,plus=False):
-        if plus:
-            if self.current_danhmuc_index > 0:
-                self.current_danhmuc_index = 0    
-            else:
-                self.current_danhmuc_index += 1
-        else:
-            if self.current_danhmuc_index < 1:
-                self.current_danhmuc_index = 1
-            else:  
-                self.current_danhmuc_index -= 1
-        self.danhmuc_widget.setCurrentIndex(self.current_danhmuc_index)
 
     def update_avatar(self):
             file = QFileDialog.getOpenFileName(self, "Chọn ảnh đại diện", "", "Images (*.png *.jpg *.jpeg)")[0]

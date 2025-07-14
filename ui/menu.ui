@@ -186,55 +186,6 @@
        <string>Tìm kiếm hàng đầu</string>
       </property>
      </widget>
-     <widget class="QStackedWidget" name="danhmuc_widget">
-      <property name="geometry">
-       <rect>
-        <x>90</x>
-        <y>380</y>
-        <width>801</width>
-        <height>171</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background-color: rgb(255, 255, 255);</string>
-      </property>
-      <property name="currentIndex">
-       <number>1</number>
-      </property>
-      <widget class="QWidget" name="page_3">
-       <widget class="QLabel" name="label_14">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>0</y>
-          <width>771</width>
-          <height>151</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="pixmap">
-         <pixmap>../img/Ảnh chụp màn hình 2025-02-28 214148.png</pixmap>
-        </property>
-        <property name="scaledContents">
-         <bool>true</bool>
-        </property>
-       </widget>
-      </widget>
-      <widget class="QWidget" name="page_4">
-       <widget class="QWidget" name="widget_14" native="true">
-        <property name="geometry">
-         <rect>
-          <x>0</x>
-          <y>0</y>
-          <width>155</width>
-          <height>169</height>
-         </rect>
-        </property>
-       </widget>
-      </widget>
-     </widget>
      <widget class="QLabel" name="label_20">
       <property name="geometry">
        <rect>
@@ -304,60 +255,13 @@
        <bool>true</bool>
       </property>
      </widget>
-     <widget class="QPushButton" name="btn_right">
-      <property name="geometry">
-       <rect>
-        <x>900</x>
-        <y>450</y>
-        <width>31</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">    border: 2px solid black;  /* Viền đen, dày 2px */
-    border-radius: 15px;       /* Bo góc viền */
-    padding: 10px;            /* Khoảng cách giữa viền và nội dung */</string>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="icon">
-       <iconset>
-        <normaloff>../img/arrow-right-solid.svg</normaloff>../img/arrow-right-solid.svg</iconset>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="btn_left">
-      <property name="geometry">
-       <rect>
-        <x>50</x>
-        <y>450</y>
-        <width>31</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">    border: 2px solid black;  /* Viền đen, dày 2px */
-    border-radius: 15px;       /* Bo góc viền */
-    padding: 10px;            /* Khoảng cách giữa viền và nội dung */</string>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="icon">
-       <iconset>
-        <normaloff>../img/arrow-left-solid.svg</normaloff>../img/arrow-left-solid.svg</iconset>
-      </property>
-     </widget>
      <zorder>label_20</zorder>
      <zorder>label_18</zorder>
-     <zorder>danhmuc_widget</zorder>
      <zorder>label_19</zorder>
      <zorder>label_4</zorder>
      <zorder>label_5</zorder>
      <zorder>label_3</zorder>
      <zorder>label_13</zorder>
-     <zorder>btn_right</zorder>
-     <zorder>btn_left</zorder>
     </widget>
     <widget class="QWidget" name="page_6">
      <widget class="QStackedWidget" name="account_widget">
@@ -1579,65 +1483,15 @@ background: none;</string>
        <bool>true</bool>
       </property>
      </widget>
-     <widget class="QWidget" name="horizontalLayoutWidget_3">
+     <widget class="QWidget" name="widget_7" native="true">
       <property name="geometry">
        <rect>
         <x>60</x>
         <y>20</y>
-        <width>851</width>
-        <height>211</height>
+        <width>136</width>
+        <height>209</height>
        </rect>
       </property>
-      <layout class="QHBoxLayout" name="horizontalLayout_3">
-       <item>
-        <widget class="QWidget" name="widget_6" native="true"/>
-       </item>
-       <item>
-        <widget class="QWidget" name="widget_5" native="true"/>
-       </item>
-       <item>
-        <widget class="QWidget" name="widget_4" native="true"/>
-       </item>
-       <item>
-        <widget class="QWidget" name="widget_2" native="true"/>
-       </item>
-       <item>
-        <widget class="QWidget" name="widget_3" native="true"/>
-       </item>
-       <item>
-        <widget class="QWidget" name="widget" native="true"/>
-       </item>
-      </layout>
-     </widget>
-     <widget class="QWidget" name="horizontalLayoutWidget_4">
-      <property name="geometry">
-       <rect>
-        <x>60</x>
-        <y>250</y>
-        <width>851</width>
-        <height>101</height>
-       </rect>
-      </property>
-      <layout class="QHBoxLayout" name="horizontalLayout_4">
-       <item>
-        <widget class="QWidget" name="widget_7" native="true"/>
-       </item>
-       <item>
-        <widget class="QWidget" name="widget_8" native="true"/>
-       </item>
-       <item>
-        <widget class="QWidget" name="widget_9" native="true"/>
-       </item>
-       <item>
-        <widget class="QWidget" name="widget_10" native="true"/>
-       </item>
-       <item>
-        <widget class="QWidget" name="widget_11" native="true"/>
-       </item>
-       <item>
-        <widget class="QWidget" name="widget_12" native="true"/>
-       </item>
-      </layout>
      </widget>
      <zorder>label_25</zorder>
      <zorder>label_28</zorder>
@@ -1645,8 +1499,7 @@ background: none;</string>
      <zorder>label_58</zorder>
      <zorder>label_26</zorder>
      <zorder>label_34</zorder>
-     <zorder>horizontalLayoutWidget_3</zorder>
-     <zorder>horizontalLayoutWidget_4</zorder>
+     <zorder>widget_7</zorder>
     </widget>
     <widget class="QWidget" name="page_12">
      <widget class="QLabel" name="label_65">
