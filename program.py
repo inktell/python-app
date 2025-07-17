@@ -1,3 +1,4 @@
+import os
 from PyQt6 import QtWidgets,QtCore
 from PyQt6.QtWidgets import *
 from PyQt6.QtGui import *
@@ -100,6 +101,7 @@ class Register(QMainWindow):
         self.btn_eye_p.clicked.connect(lambda : self.hiddenOrShow(self.password,self.btn_eye_p))
         self.btn_eye_cp.clicked.connect(lambda : self.hiddenOrShow(self.confirm_password,self.btn_eye_cp))
 
+
     def hiddenOrShow(self,input:QLineEdit,btn:QPushButton):
         if input.echoMode() == QLineEdit.EchoMode.Password:
             input.setEchoMode(QLineEdit.EchoMode.Normal)
@@ -165,7 +167,7 @@ class Register(QMainWindow):
         self.login = Login()
         self.login.show()
         self.close()
-        
+
 class Home(QMainWindow):
     def __init__(self,user_id):
         super(Home,self).__init__()
@@ -195,6 +197,9 @@ class Home(QMainWindow):
         self.btn_shopee.clicked.connect(lambda : self.navMainScreen(0))
         self.btn_bell.clicked.connect(lambda : self.navMainScreen(1))
 
+        self.btn_avatar = self.findChild(QPushButton,"btn_avatar")
+        self.btn_avatar.clicked.connect(self.update_avatar)
+
         self.btn_account_info.clicked.connect(lambda : self.navAccountScreen(0))
         self.btn_nap_account.clicked.connect(lambda : self.navAccountScreen(0))
         self.btn_nap_bell.clicked.connect(lambda : self.navAccountScreen(1))
@@ -202,10 +207,26 @@ class Home(QMainWindow):
         self.btn_nap_bag.clicked.connect(lambda : self.navAccountScreen(3))
         self.btn_nap_setting.clicked.connect(lambda : self.navAccountScreen(4))
         self.btn_bell.clicked.connect(lambda : self.navAccountScreen(1))
-    
-        self.current_danhmuc_index = 0
-        self.btn_right.clicked.connect(lambda : self.navSellScreen(1,True))
-        self.btn_left.clicked.connect(lambda : self.navSellScreen(0))
+
+        self.btn_luu = self.findChild(QPushButton,"btn_save")
+        self.btn_luu.clicked.connect(self.update_info)
+        self.btn_luu.clicked.connect(lambda :self.navAccountScreen(0))
+
+        self.txt_pass_old = self.findChild(QLineEdit,"txt_pass_old")
+        self.txt_pass_new = self.findChild(QLineEdit,"txt_pass_new")
+        self.txt_pass_new2 = self.findChild(QLineEdit,"txt_pass_new2")
+        self.btn_up_pass = self.findChild(QPushButton,"btn_up_pass")
+        self.btn_eye_p = self.findChild(QPushButton,"btn_eye_p")
+        self.btn_eye_p_2 = self.findChild(QPushButton,"btn_eye_p_2")
+        self.btn_eye_p_3 = self.findChild(QPushButton,"btn_eye_p_3")
+        
+        self.btn_up_pass.clicked.connect(self.update_password)
+        self.btn_eye_p.clicked.connect(lambda : self.hiddenOrShow(self.txt_pass_old,self.btn_eye_p))
+        self.btn_eye_p_2.clicked.connect(lambda : self.hiddenOrShow(self.txt_pass_new,self.btn_eye_p_2))
+        self.btn_eye_p_3.clicked.connect(lambda : self.hiddenOrShow(self.txt_pass_new2,self.btn_eye_p_3))
+
+        self.btn_re_user = self.findChild(QPushButton,"btn_re_user")
+        self.btn_re_user.clicked.connect(self.remove_user)
 
     def navMainScreen(self, index):
         self.main_window.setCurrentIndex(index)
@@ -216,21 +237,80 @@ class Home(QMainWindow):
     def loadAccountInfo(self):
         self.txt_name = self.findChild(QLineEdit,"txt_name")
         self.txt_email = self.findChild(QLineEdit,"txt_email")
+        self.cb_gender = self.findChild(QComboBox,"cb_gender")
+
+        if self.user["avatar"]:
+            self.btn_avatar.setIcon(QIcon(self.user["avatar"]))
+
+        if not self.user["gender"]:
+            self.cb_gender.setCurrentIndex(0)
+        elif self.user["gender"] == "Nam":
+            self.cb_gender.setCurrentIndex(1)
+        elif self.user["gender"] == "Nữ":
+            self.cb_gender.setCurrentIndex(2)
+        else:
+            self.cb_gender.setCurrentIndex(3)
+
         self.txt_name.setText(self.user["name"])
         self.txt_email.setText(self.user["email"])
 
-    def navSellScreen(self,index,plus=False):
-        if plus:
-            if self.current_danhmuc_index > 0:
-                self.current_danhmuc_index = 0    
-            else:
-                self.current_danhmuc_index += 1
+    def update_avatar(self):
+            file = QFileDialog.getOpenFileName(self, "Chọn ảnh đại diện", "", "Images (*.png *.jpg *.jpeg)")[0]
+            if file:
+                self.user["avatar"] = file
+                self.btn_avatar.setIcon(QIcon(file))
+                update_avatar_user(self.user_id, file)
+                
+    def update_info(self):
+        self.msg = MessageBox()
+        name = self.txt_name.text().strip()
+        email = self.txt_email.text().strip()
+        gender = self.cb_gender.currentText()
+
+        update_user(self.user_id, name, email, gender)
+        self.msg.success_box("Cập nhật thông tin thành công")
+
+    def hiddenOrShow(self,input:QLineEdit,btn:QPushButton):
+        if input.echoMode() == QLineEdit.EchoMode.Password:
+            input.setEchoMode(QLineEdit.EchoMode.Normal)
+            btn.setIcon(QIcon("img/eye-solid.svg"))
         else:
-            if self.current_danhmuc_index < 1:
-                self.current_danhmuc_index = 1
-            else:  
-                self.current_danhmuc_index -= 1
-        self.danhmuc_widget.setCurrentIndex(self.current_danhmuc_index)
+            input.setEchoMode(QLineEdit.EchoMode.Password)
+            btn.setIcon(QIcon("img/eye-slash-solid.svg"))
+
+    def update_password(self):
+        self.msg = MessageBox()
+        old_pass = self.txt_pass_old.text().strip()
+        new_pass = self.txt_pass_new.text().strip()
+        new_pass2 = self.txt_pass_new2.text().strip()
+
+        if old_pass == "" or new_pass == "" or new_pass2 == "":
+            self.msg.error_box("Không thể để trống")
+            return
+        
+        if new_pass != new_pass2:
+            self.msg.error_box("Mật khẩu mới không trùng khớp")
+            return
+        
+        user = get_user_by_id(self.user_id)
+        if user["password"] != old_pass:
+            self.msg.error_box("Mật khẩu cũ không đúng")
+            return
+        
+        update_password_user(self.user_id, new_pass)
+        self.msg.success_box("Cập nhật mật khẩu thành công")
+        
+    def remove_user(self):
+        self.msg = MessageBox()
+
+        remove_user(self.user_id)
+        self.msg.success_box("Xóa tài khoản thành công")
+        self.show_login()
+
+    def show_login(self):
+        self.login = Login()
+        self.login.show()
+        self.close()
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
