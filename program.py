@@ -6,6 +6,8 @@ from PyQt6.QtCore import *
 from PyQt6 import uic
 import sys
 from database import *
+from pro_list_widget import ProductListWidget
+from cart_item_widget import CartItemWidget
 
 class MessageBox():
     def success_box(self,message):
@@ -228,6 +230,28 @@ class Home(QMainWindow):
         self.btn_re_user = self.findChild(QPushButton,"btn_re_user")
         self.btn_re_user.clicked.connect(self.remove_user)
 
+        # Initialize product list widget
+        self.pro_list_widget = self.findChild(QWidget,"pro_list_widget")
+        self.product_list = ProductListWidget()
+        
+        # Create layout for pro_list_widget
+        pro_list_layout = QVBoxLayout(self.pro_list_widget)
+        pro_list_layout.setContentsMargins(0, 0, 0, 0)
+        pro_list_layout.addWidget(self.product_list)
+        
+        # Connect product list signals
+        self.product_list.product_clicked.connect(self.on_product_clicked)
+        self.product_list.product_liked.connect(self.on_product_liked)
+        self.product_list.product_buy_now.connect(self.on_product_buy_now)
+
+        # Cart widget
+        self.cart_widget = self.findChild(QWidget, "cart_widget")
+        self.cart_layout = QVBoxLayout(self.cart_widget)
+        self.cart_layout.setContentsMargins(8, 8, 8, 8)
+        self.cart_layout.setSpacing(8)
+        # Kết nối chuyển tab cart
+        self.main_window.currentChanged.connect(self.on_main_window_changed)
+
     def navMainScreen(self, index):
         self.main_window.setCurrentIndex(index)
 
@@ -307,13 +331,110 @@ class Home(QMainWindow):
         self.msg.success_box("Xóa tài khoản thành công")
         self.show_login()
 
-    def show_login(self):
-        self.login = Login()
-        self.login.show()
-        self.close()
+    def on_product_clicked(self, product_id):
+        """Handle product card click"""
+        product = get_product_by_id(product_id)
+        if product:
+            self.fill_detail(product)
+            self.navMainScreen(3)
+
+    def fill_detail(self, product):
+        # Lấy widget detail
+        detail_widget = self.main_window.widget(3)
+        # Lấy các thành phần
+        img_label = detail_widget.findChild(QLabel, "detailImage")
+        title_label = detail_widget.findChild(QLabel, "detailTitle")
+        price_label = detail_widget.findChild(QLabel, "detailPrice")
+        old_price_label = detail_widget.findChild(QLabel, "detailOldPrice")
+        rating_label = detail_widget.findChild(QLabel, "detailRating")
+        sold_label = detail_widget.findChild(QLabel, "detailSold")
+        category_label = detail_widget.findChild(QLabel, "detailCategory")
+        desc_label = detail_widget.findChild(QLabel, "detailDescription")
+        shipping_label = detail_widget.findChild(QLabel, "detailShipping")
+        # Helper chuyển số
+        def safe_float(val):
+            try:
+                return float(str(val).replace(",", "").strip())
+            except:
+                return 0.0
+        # Ảnh
+        if product['img']:
+            pixmap = QPixmap(product['img'])
+            img_label.setPixmap(pixmap.scaled(img_label.size(), Qt.AspectRatioMode.KeepAspectRatio, Qt.TransformationMode.SmoothTransformation))
+        else:
+            img_label.setText("No Image")
+        # Tên
+        title_label.setText(product['title'])
+        # Giá
+        price = safe_float(product['price'])
+        price_label.setText(f"₫{int(price):,}")
+        # Giá gốc
+        original_price = safe_float(product['original_price'])
+        if product['original_price'] and original_price > price:
+            old_price_label.setText(f"₫{int(original_price):,}")
+            old_price_label.setVisible(True)
+        else:
+            old_price_label.setVisible(False)
+        # Đánh giá
+        rating = safe_float(product['rate'])
+        rating_label.setText(f"⭐ {rating:.1f}")
+        # Đã bán
+        sold = safe_float(product['sold'])
+        sold_label.setText(f"Đã bán {sold:,.0f}")
+        # Danh mục
+        category_label.setText(product['category'] or "")
+        # Mô tả
+        desc_label.setText(product['description'] or "")
+        # Vận chuyển
+        shipping_label.setText("Miễn phí vận chuyển toàn quốc")
+        # Kết nối nút thêm vào giỏ hàng
+        add_btn = detail_widget.findChild(QPushButton, "detailAddToCartBtn")
+        add_btn.clicked.connect(lambda: self.add_product_to_cart(product))
+
+    def on_product_liked(self, product_id):
+        """Handle product like button click"""
+        self.msg = MessageBox()
+        self.msg.success_box(f"Đã thêm sản phẩm ID: {product_id} vào danh sách yêu thích")
+        # TODO: Add to favorites list
+    
+    def on_product_buy_now(self, product_id):
+        """Handle product buy now button click"""
+        self.msg = MessageBox()
+        self.msg.success_box(f"Đã thêm sản phẩm ID: {product_id} vào giỏ hàng")
+        # TODO: Add to cart
+
+    def add_product_to_cart(self, product):
+        add_to_cart(self.user_id, product)
+        self.msg = MessageBox()
+        self.msg.success_box("Đã thêm vào giỏ hàng!")
+
+    def on_main_window_changed(self, index):
+        # Nếu chuyển sang tab cart (index 4), load lại cart
+        if index == 4:
+            self.load_cart()
+
+    def load_cart(self):
+        # Xóa widget cũ
+        while self.cart_layout.count():
+            item = self.cart_layout.takeAt(0)
+            w = item.widget()
+            if w:
+                w.deleteLater()
+        # Lấy cart
+        cart = get_cart_by_user(self.user_id)
+        for item in cart:
+            w = CartItemWidget(item)
+            w.remove_clicked.connect(lambda pid, uid=self.user_id: self.remove_cart_item(uid, pid))
+            self.cart_layout.addWidget(w)
+        self.cart_layout.addStretch()
+
+    def remove_cart_item(self, user_id, product_id):
+        remove_from_cart(user_id, product_id)
+        self.load_cart()
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     login = Login()
+    login = Home(1)
     login.show()
     sys.exit(app.exec())
