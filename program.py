@@ -331,6 +331,11 @@ class Home(QMainWindow):
         self.msg.success_box("Xóa tài khoản thành công")
         self.show_login()
 
+    def show_login(self):
+        self.login = Login()
+        self.login.show()
+        self.close()
+
     def on_product_clicked(self, product_id):
         """Handle product card click"""
         product = get_product_by_id(product_id)
